@@ -1,5 +1,5 @@
 <template>
   <div>
-    <NuxtWelcome />
+    Music Menu
   </div>
 </template>
