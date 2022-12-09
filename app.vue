@@ -1,22 +1,26 @@
 <template>
-  <div>
-    <header class="h-20 flex justify-center items-center">
-      <h1 class="text-2xl font-bold">PsySystem Records</h1>
-    </header>
+  <div class="py-16">
 
-    <main>
-      <!-- CONTROLLS CONTAINER -->
-      <div class="">
+      <main class="border-2 w-10/12 mx-auto flex gap-16">
+
+        <!-- NEW TRACK -->
+        <div class="flex-1 border-r-2">
+          Track
+        </div>
+
         <!-- PLAYER -->
-        <div class="">
-          <div class="">
-            <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo" class="mb-4">
-              <h3 class="font-bold">{{audio.name}}</h3>
-              <p class="text-grey mt-1 text-sm">{{audio.artist}}</p>
-              <NuxtImg class="w-[380px]" provider="cloudinary" format="webp" sizes="sm:760px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
-            </div>
+        <div class="shrink-0 border-l-2">
+          
+          <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo">
+            <!-- COVER -->
+            <NuxtImg class="w-[380px]" provider="cloudinary" format="webp" sizes="sm:760px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
+            <!-- TITLE -->
+            <h3 class="text-2xl font-bold">{{audio.name}}</h3>
+            <p class="text-grey">{{audio.artist}}</p>
           </div>
-          <div class="">
+
+          <!-- CONTROLS -->
+          <div class="flex justify-between items-center gap-4">
             <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
               <svg @click="random = !random" :class="random ? 'text-red-500':''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.59 12.83L4.4 15c-.58.58-1.59 1-2.4 1H0v-2h2c.29 0 .8-.2 1-.41l2.17-2.18 1.42 1.42zM16 4V1l4 4-4 4V6h-2c-.29 0-.8.2-1 .41l-2.17 2.18L9.4 7.17 11.6 5c.58-.58 1.59-1 2.41-1h2zm0 10v-3l4 4-4 4v-3h-2c-.82 0-1.83-.42-2.41-1l-8.6-8.59C2.8 6.21 2.3 6 2 6H0V4h2c.82 0 1.83.42 2.41 1l8.6 8.59c.2.2.7.41.99.41h2z" /></svg>
             </div>
@@ -24,9 +28,8 @@
               <svg @click="prevButton ? previous() : ''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4 5h3v10H4V5zm12 0v10l-9-5 9-5z" /></svg>
             </div>
             <div class="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-red-700 p-4 text-white shadow-lg">
-              <svg v-if="!pauseTrack" @click="play()" class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg v-if="!pauseTrack" @click="play()" class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
               </svg>
               <svg v-else @click="pause()" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" /></svg>
             </div>
@@ -38,15 +41,24 @@
             </div>
           </div>
         </div>
+
+      </main>
+
+
+
+    <div class="mt-[100px]">
+      <!-- CONTROLLS CONTAINER -->
+      <div class="w-10/12 mx-auto">
+        
         <!-- PLAYLIST -->
         <div class="">
-          <ul class="m-auto mb-2 w-full overflow-auto pt-2" style="max-height:100%" id="journal-scroll">
-            <li :class="indexo == index ? 'bg-slate-300':''" class="m-auto flex w-11/12 rounded p-4" v-for="(audio,indexo) in audios" :key="indexo">
-              <div class="w-full flex cursor-pointer" @click="selectSound(indexo)">
-                <div class="m-auto flex w-1/5 items-center gap-4 font-semibold">
-                  {{indexo + 1}}
+          <ul class="m-auto mb-2 w-full overflow-auto pt-2 grid grid-cols-6" style="max-height:100%" id="journal-scroll">
+            <li :class="indexo == index ? 'bg-slate-300':''" class="m-auto flex flex-col w-11/12 rounded p-4" v-for="(audio,indexo) in audios" :key="indexo">
+              <div class="w-full flex flex-col cursor-pointer" @click="selectSound(indexo)">
+                <div class="m-auto flex items-center gap-4 font-semibold">
+                  <!-- {{indexo + 1}} -->
 
-                  <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:128px" quality="100" :src="audio.cover" :alt="audio.name" width="64" height="64" />
+                  <NuxtImg class="rounded-md w-[480px]" provider="cloudinary" format="webp" sizes="sm:760px" quality="100" :src="audio.cover" :alt="audio.name" width="480" height="480" />
                 </div>
                 <div class="m-auto w-3/5 text-left font-semibold">
                   <div class="text-sm font-semibold">
@@ -75,7 +87,7 @@
         </div>
       </div>
       <!-- MINI PLAYER -->
-      <div class="fixed bottom-0 w-full bg-white">
+      <div class="bg-white">
         <div class="flex h-16 items-center justify-around px-4">
           <div class="hidden w-2/12 items-center md:flex" v-for="(audio,indexo) in audios.slice(index, index + 1)" :key="indexo">
             <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:80px" quality="80" :src="audio.cover" :alt="audio.name" width="40" height="40" />
@@ -129,7 +141,7 @@
           </div>
         </div>
       </div>
-    </main>
+    </div>
   </div>
 </template>
 
