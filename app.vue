@@ -13,7 +13,7 @@
             <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo" class="mb-4">
               <h3 class="font-bold">{{audio.name}}</h3>
               <p class="text-grey mt-1 text-sm">{{audio.artist}}</p>
-              <NuxtImg class="" provider="cloudinary" format="webp" sizes="sm:640px" quality="80" :src="audio.cover" :alt="audio.name" width="256" height="256" />
+              <NuxtImg class="w-[380px]" provider="cloudinary" format="webp" sizes="sm:760px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
             </div>
           </div>
           <div class="">
@@ -41,26 +41,34 @@
         <!-- PLAYLIST -->
         <div class="">
           <ul class="m-auto mb-2 w-full overflow-auto pt-2" style="max-height:100%" id="journal-scroll">
-            <li @click="selectSound(indexo)" :style="indexo == index ? '' : ''" :class="indexo == index ? 'bg-slate-300':''" class="m-auto flex w-11/12 cursor-pointer rounded p-4 py-1" v-for="(audio,indexo) in audios" :key="indexo">
-              <div class="m-auto flex w-1/5 items-center gap-4 font-semibold">
-                {{indexo + 1}}
+            <li :class="indexo == index ? 'bg-slate-300':''" class="m-auto flex w-11/12 rounded p-4" v-for="(audio,indexo) in audios" :key="indexo">
+              <div class="w-full flex cursor-pointer" @click="selectSound(indexo)">
+                <div class="m-auto flex w-1/5 items-center gap-4 font-semibold">
+                  {{indexo + 1}}
 
-                <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:128px" quality="100" :src="audio.cover" :alt="audio.name" width="64" height="64" />
-              </div>
-              <div class="m-auto w-3/5 text-left font-semibold">
-                <div class="text-sm font-semibold">
-                  <p>{{audio.name}}</p>
-                  <p class="text-xs text-gray-500">{{audio.artist}}</p>
+                  <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:128px" quality="100" :src="audio.cover" :alt="audio.name" width="64" height="64" />
+                </div>
+                <div class="m-auto w-3/5 text-left font-semibold">
+                  <div class="text-sm font-semibold">
+                    <p>{{audio.name}}</p>
+                    <p class="text-xs text-gray-500">{{audio.artist}}</p>
+                  </div>
+                </div>
+                <div class="m-auto w-1/5">
+                  <svg v-if="state.audioPlaying[indexo]" class="m-auto h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" />
+                  </svg>
+                  <svg v-else class="m-auto h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                 </div>
               </div>
-              <div class="m-auto w-1/5">
-                <svg v-if="state.audioPlaying[indexo]" class="m-auto h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                  <path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" />
-                </svg>
-                <svg v-else class="m-auto h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
+
+              <div class="flex items-center" v-for="(sub, index) in audio.sub" :key="index"> 
+                <NuxtLink :to="sub.url" target="_blank">
+                  <img class="w-8 shadow-lg rounded-lg" :src="sub.icon" :alt="sub.name">
+                </NuxtLink>
               </div>
             </li>
           </ul>
@@ -172,13 +180,27 @@ export default {
             name: "Time For Freedom",
             artist: "TheFubon",
             cover: "/cover/time-for-freedom.png",
-            howl: null
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
+            howl: null,
           },
           {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669737299/music/flying-phoenix.mp3",
             name: "Flying Phoenix",
             artist: "TheFubon",
             cover: "/cover/flying-pohenix.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/flying-phoenix-single/1657193404"
+              }
+            ],
             howl: null
           },
           {
@@ -186,6 +208,13 @@ export default {
             name: "Fun At Noise",
             artist: "TheFubon",
             cover: "/cover/fun-at-noise.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -193,6 +222,13 @@ export default {
             name: "Soul of Space",
             artist: "TheFubon",
             cover: "/cover/soul-of-space.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -200,6 +236,13 @@ export default {
             name: "Under The Stars",
             artist: "TheFubon",
             cover: "/cover/under-the-stars.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -207,6 +250,13 @@ export default {
             name: "Quantum",
             artist: "TheFubon",
             cover: "/cover/quantum.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -214,6 +264,13 @@ export default {
             name: "Until",
             artist: "TheFubon",
             cover: "/cover/until.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -221,6 +278,13 @@ export default {
             name: "Retrospective",
             artist: "TheFubon",
             cover: "/cover/retrospective.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -228,6 +292,13 @@ export default {
             name: "Deeper House",
             artist: "TheFubon",
             cover: "/cover/deeper-house.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -235,6 +306,13 @@ export default {
             name: "Your Love",
             artist: "TheFubon",
             cover: "/cover/your-love.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -242,6 +320,13 @@ export default {
             name: "Where Did You Go",
             artist: "TheFubon",
             cover: "/cover/where-did-you-go.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -249,6 +334,13 @@ export default {
             name: "Feelings of Youth",
             artist: "TheFubon",
             cover: "/cover/feelings-of-youth.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -256,6 +348,13 @@ export default {
             name: "SunSet (Extended Version)",
             artist: "TheFubon",
             cover: "/cover/sunset-extended-version.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -263,6 +362,13 @@ export default {
             name: "By My Side",
             artist: "yagelProject",
             cover: "/cover/by-my-side.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -270,6 +376,13 @@ export default {
             name: "Prey",
             artist: "yagelProject",
             cover: "/cover/prey.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -277,6 +390,13 @@ export default {
             name: "SunSet",
             artist: "yagelProject",
             cover: "/cover/sunset.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -284,6 +404,13 @@ export default {
             name: "Atmosphere",
             artist: "yagelProject",
             cover: "/cover/atmosphere.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -291,6 +418,13 @@ export default {
             name: "Big Tree",
             artist: "yagelProject",
             cover: "/cover/big-tree.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -298,6 +432,13 @@ export default {
             name: "Eximinds Trance",
             artist: "yagelProject",
             cover: "/cover/eximinds-trance.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -305,6 +446,13 @@ export default {
             name: "Мама, Я Танцую (PsyTrance RMX)",
             artist: "yagelProject",
             cover: "/cover/mama-ya-tancuyu.jpg",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -312,6 +460,13 @@ export default {
             name: "Black Beach",
             artist: "yagelProject",
             cover: "/cover/black-beach.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -319,6 +474,13 @@ export default {
             name: "Тихая правда",
             artist: "Перекати поле",
             cover: "/cover/tichaya-pravda.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
           {
@@ -326,6 +488,13 @@ export default {
             name: "Teacher's Preach",
             artist: "yagelProject",
             cover: "/cover/teachers-preach.png",
+            sub: [
+              {
+                name: "iTunes",
+                icon: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Itunes-music-app-icon.png",
+                url: "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+              }
+            ],
             howl: null
           },
         ]);
