@@ -1,7 +1,7 @@
 <template>
   <div class="py-16">
 
-      <main class="border-2 w-10/12 mx-auto flex gap-16">
+      <main class="border-2 container flex gap-16">
 
         <!-- NEW TRACK -->
         <div class="flex-1 border-r-2">
