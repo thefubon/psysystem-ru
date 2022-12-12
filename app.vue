@@ -5,7 +5,7 @@
 
         <!-- NEW TRACK -->
         <div class="flex-1 border-r-2">
-          Track
+          Track dfbgefge
         </div>
 
         <!-- PLAYER -->
