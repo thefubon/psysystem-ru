@@ -68,12 +68,12 @@
               <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
                 <svg @click="prevButton ? previous() : ''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4 5h3v10H4V5zm12 0v10l-9-5 9-5z" /></svg>
               </div>
-              <div class="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-red-700 p-4 text-white shadow-lg">
-                <svg v-if="!pauseTrack" @click="play()" class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
-                </svg>
-                <svg v-else @click="pause()" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" /></svg>
+
+              <div>
+                <Icon v-if="!pauseTrack" @click="play()" name="ic:outline-play-circle-filled" size="64" class="text-black hover:cursor-pointer inline-block" />
+                <Icon v-else @click="pause()" name="ic:outline-pause-circle-filled" size="64" class="text-black hover:cursor-pointer inline-block" />
               </div>
+
               <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
                 <svg @click="nextButton ? next() : ''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 5h3v10h-3V5zM4 5l9 5-9 5V5z" /></svg>
               </div>
