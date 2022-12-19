@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-4 md:pt-16 pb-32">
+  <div class="pt-4 md:pt-10 pb-32 md:pb-24">
 
     <main class="container flex flex-col md:flex-row gap-20">
 
@@ -46,7 +46,7 @@
       </div>
 
       <!-- PLAYER -->
-      <div class="shrink-0 hidden">
+      <div class="shrink-0 hidden md:block">
         
         <div class="sticky top-28 space-y-16">
           
@@ -97,7 +97,7 @@
     <div class="bg-white border-t fixed bottom-0 inset-x-0">
       <div class="container py-4 md:py-0 md:h-16 flex flex-col-reverse md:flex-row justify-between items-center gap-4">
 
-        <div class="flex w-full items-center">
+        <div class="flex w-full md:w-auto items-center gap-4">
           <!-- COVER -->
           <div class="flex-1 flex items-center gap-2 md:gap-4" v-for="(audio,indexo) in audios.slice(index, index + 1)" :key="indexo">
             <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:80px" quality="80" :src="audio.cover" :alt="audio.name" width="40" height="40" />
@@ -118,7 +118,7 @@
 
         <!-- TIMER -->
         <div class="flex-1 flex items-center gap-4 w-full">
-          <div class="shrink-0 w-12 hidden">
+          <div class="shrink-0 w-12 hidden md:flex">
             {{timer}}
           </div>
 
@@ -133,19 +133,19 @@
             </div>
           </div>
           
-          <div class="shrink-0 w-12 hidden">
+          <div class="shrink-0 w-12 hidden md:flex">
             {{duration}}
           </div>
         </div>
 
         <!-- MUTE -->
-        <div class="shrink-0 hidden" @click="mute()">
+        <div class="shrink-0 hidden md:flex" @click="mute()">
           <Icon v-if="mutePlayer" name="fa6-solid:volume-low" size="28" />
           <Icon v-else name="fa6-solid:volume-xmark" size="28" />
         </div>
 
         <!-- VOLUME -->
-        <div class="shrink-0 mt-1 hidden">
+        <div class="shrink-0 mt-1 hidden md:flex">
           <div class="relative m-auto w-40">
             <div @click="volume($event)" ref="volBar" class="bg-grey-dark relative m-auto h-1 cursor-pointer rounded-full bg-gray-200" style="width:100%">
               <div class="relative flex h-1 justify-end rounded-full bg-black" :style="{'width' : volumeProgress + '%'}"></div>
