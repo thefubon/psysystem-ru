@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-4 md:pt-10 pb-32 md:pb-24">
+  <div class="pt-4 md:pt-16 pb-32">
 
     <main class="container flex flex-col md:flex-row gap-20">
 
