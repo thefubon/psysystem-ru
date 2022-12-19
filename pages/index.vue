@@ -17,8 +17,10 @@
             </div>
             
             <!-- COVER -->
-            <div class="hover:cursor-pointer relative group" @click="selectSound(indexo)">
-              <NuxtImg class="rounded-lg" provider="cloudinary" format="webp" sizes="sm:760px" quality="100" :src="audio.cover" :alt="audio.name" width="480" height="480" />
+            <div class="hover:cursor-pointer relative group overflow-hidden rounded-lg" @click="selectSound(indexo)">
+              <span class="opacity-0 group-hover:opacity-100 duration-150 absolute inset-0 bg-black/50"></span>
+
+              <NuxtImg provider="cloudinary" format="webp" sizes="sm:760px" quality="100" :src="audio.cover" :alt="audio.name" width="480" height="480" />
 
               <!-- NEW STATUS -->
               <span class="absolute top-3 right-3 bg-yellow-400 px-1.5 text-black rounded-full text-xs" v-if="audio.new">New</span>
@@ -46,36 +48,45 @@
       <!-- PLAYER -->
       <div class="shrink-0">
         
-        <div class="sticky top-28">
-          <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo">
-            <!-- COVER -->
-            <NuxtImg class="w-[380px] rounded-lg" provider="cloudinary" format="webp" sizes="sm:760px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
-            <!-- TITLE -->
-            <h3 class="text-2xl font-bold">{{audio.name}}</h3>
-            <p class="text-grey">{{audio.artist}}</p>
+        <div class="sticky top-28 space-y-16">
+          
+          <div>
+            <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo">
+              <!-- COVER -->
+              <NuxtImg class="w-[380px] rounded-lg" provider="cloudinary" format="webp" sizes="sm:760px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
+
+              <!-- TITLE -->
+              <h3 class="text-2xl font-bold">{{audio.name}}</h3>
+              <p class="text-grey">{{audio.artist}}</p>
+            </div>
+
+            <!-- CONTROLS -->
+            <div class="flex justify-between items-center gap-4">
+              <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
+                <svg @click="random = !random" :class="random ? 'text-red-500':''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.59 12.83L4.4 15c-.58.58-1.59 1-2.4 1H0v-2h2c.29 0 .8-.2 1-.41l2.17-2.18 1.42 1.42zM16 4V1l4 4-4 4V6h-2c-.29 0-.8.2-1 .41l-2.17 2.18L9.4 7.17 11.6 5c.58-.58 1.59-1 2.41-1h2zm0 10v-3l4 4-4 4v-3h-2c-.82 0-1.83-.42-2.41-1l-8.6-8.59C2.8 6.21 2.3 6 2 6H0V4h2c.82 0 1.83.42 2.41 1l8.6 8.59c.2.2.7.41.99.41h2z" /></svg>
+              </div>
+              <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
+                <svg @click="prevButton ? previous() : ''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4 5h3v10H4V5zm12 0v10l-9-5 9-5z" /></svg>
+              </div>
+              <div class="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-red-700 p-4 text-white shadow-lg">
+                <svg v-if="!pauseTrack" @click="play()" class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                </svg>
+                <svg v-else @click="pause()" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" /></svg>
+              </div>
+              <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
+                <svg @click="nextButton ? next() : ''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 5h3v10h-3V5zM4 5l9 5-9 5V5z" /></svg>
+              </div>
+              <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
+                <svg @click="repeat = !repeat" :class="repeat ? 'text-red-500':''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4a2 2 0 0 0-2 2v6H0l4 4 4-4H5V6h7l2-2H5zm10 4h-3l4-4 4 4h-3v6a2 2 0 0 1-2 2H6l2-2h7V8z" /></svg>
+              </div>
+            </div>
           </div>
 
-          <!-- CONTROLS -->
-          <div class="flex justify-between items-center gap-4">
-            <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
-              <svg @click="random = !random" :class="random ? 'text-red-500':''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.59 12.83L4.4 15c-.58.58-1.59 1-2.4 1H0v-2h2c.29 0 .8-.2 1-.41l2.17-2.18 1.42 1.42zM16 4V1l4 4-4 4V6h-2c-.29 0-.8.2-1 .41l-2.17 2.18L9.4 7.17 11.6 5c.58-.58 1.59-1 2.41-1h2zm0 10v-3l4 4-4 4v-3h-2c-.82 0-1.83-.42-2.41-1l-8.6-8.59C2.8 6.21 2.3 6 2 6H0V4h2c.82 0 1.83.42 2.41 1l8.6 8.59c.2.2.7.41.99.41h2z" /></svg>
-            </div>
-            <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
-              <svg @click="prevButton ? previous() : ''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4 5h3v10H4V5zm12 0v10l-9-5 9-5z" /></svg>
-            </div>
-            <div class="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-red-700 p-4 text-white shadow-lg">
-              <svg v-if="!pauseTrack" @click="play()" class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
-              </svg>
-              <svg v-else @click="pause()" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" /></svg>
-            </div>
-            <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
-              <svg @click="nextButton ? next() : ''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 5h3v10h-3V5zM4 5l9 5-9 5V5z" /></svg>
-            </div>
-            <div class="text-grey-darker rounded-full p-1 hover:bg-gray-300">
-              <svg @click="repeat = !repeat" :class="repeat ? 'text-red-500':''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4a2 2 0 0 0-2 2v6H0l4 4 4-4H5V6h7l2-2H5zm10 4h-3l4-4 4 4h-3v6a2 2 0 0 1-2 2H6l2-2h7V8z" /></svg>
-            </div>
+          <div>
+            <p class="text-sm text-gray-600">&copy; PsySystem Records</p>
           </div>
+
         </div>
       </div>
 
@@ -83,72 +94,68 @@
 
     <!-- MINI PLAYER -->
 
-    <div class="bg-gray-100 fixed bottom-0 inset-x-0">
-        <div class="container h-16 flex justify-between items-center">
+    <div class="bg-white border-t fixed bottom-0 inset-x-0">
+      <div class="container h-16 flex justify-between items-center gap-8">
 
-            TEST
+        <!-- COVER -->
+        <div class="flex items-center gap-4" v-for="(audio,indexo) in audios.slice(index, index + 1)" :key="indexo">
+          <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:80px" quality="80" :src="audio.cover" :alt="audio.name" width="40" height="40" />
 
+          <!-- ABOUT -->
+          <div class="flex flex-col font-semibold">
+            <p class="line-clamp-1">{{audio.name}}</p>
+            <p class="text-xs text-gray-600">{{audio.artist}}</p>
+          </div>
         </div>
-    </div>
 
+        <!-- PLAY BUTTON -->
+        <div class="">
+          <Icon v-if="!pauseTrack" @click="play()" name="ic:outline-play-circle-filled" size="40" class="text-black hover:cursor-pointer inline-block" />
+          <Icon v-else @click="pause()" name="ic:outline-pause-circle-filled" size="40" class="text-black hover:cursor-pointer inline-block" />
+        </div>
 
-
-
-      <!-- MINI PLAYER -->
-      <div class="bg-gray-300 hidden">
-        <div class="container flex h-16 items-center justify-around">
-          <div class="hidden w-2/12 items-center md:flex" v-for="(audio,indexo) in audios.slice(index, index + 1)" :key="indexo">
-            <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:80px" quality="80" :src="audio.cover" :alt="audio.name" width="40" height="40" />
-            <div class="ml-2 flex flex-col font-semibold">
-              <p class="line-clamp-1">{{audio.name}}</p>
-              <p class="text-xs text-gray-600">{{audio.artist}}</p>
-            </div>
+        <!-- TIMER -->
+        <div class="flex-1 flex items-center gap-4">
+          <div class="shrink-0 w-12">
+            {{timer}}
           </div>
-          <div class="rounded-full bg-gradient-to-r from-red-500 via-red-600 to-red-700 p-4 text-white shadow-lg">
-            <svg v-if="!pauseTrack" @click="play()" class="h-8 w-8 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            <svg v-else @click="pause()" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" /></svg>
-          </div>
-          <div class="flex w-4/5 items-center md:w-8/12">
-            <div class="text-grey-darker w-2/12 text-sm font-semibold md:w-1/12">
-              <p>{{timer}}</p>
-            </div>
-            <div class="relative mt-1 w-8/12 md:w-10/12">
-              <div @click="seek($event)" ref="progress" class="bg-grey-dark h-1 cursor-pointer rounded-full bg-gray-500">
-                <div class="relative flex h-1 w-full justify-end rounded-full bg-gradient-to-r from-red-500 to-red-700" :style="{'width' : step + '%'}"></div>
+
+          <div class="flex-1 mt-1">
+            <div class="relative">
+              <div @click="seek($event)" ref="progress" class="bg-grey-dark h-1 cursor-pointer rounded-full bg-gray-200">
+                <div class="relative flex h-1 w-full justify-end rounded-full bg-black" :style="{'width' : step + '%'}"></div>
               </div>
               <div class="relative flex h-1 w-full justify-end rounded-full" :style="{'width' : step + '%'}">
-                <span id="progressButtonTimer" class="pin-r pin-b absolute -mb-1 h-3 w-3 rounded-full bg-gradient-to-r from-red-500 to-red-700 shadow md:h-4 md:w-4"></span>
+                <span id="progressButtonTimer" class="pin-r pin-b absolute -bottom-0.5 h-3 w-3 rounded-full bg-black md:h-4 md:w-4"></span>
               </div>
-            </div>
-            <div class="text-grey-darker w-2/12 text-sm font-semibold md:w-1/12">
-              <p>{{duration}}</p>
             </div>
           </div>
+          
+          <div class="shrink-0 w-12">
+            {{duration}}
+          </div>
+        </div>
 
-          <div class="m-auto flex w-1/5 items-center md:w-2/12">
-            <div class="w-3/12 rounded-full hover:bg-gray-500 md:w-2/12 md:p-1" @click="mute()">
-              <svg v-if="mutePlayer" class="m-auto h-6 w-6 cursor-pointer text-red-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" clip-rule="evenodd" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
-              </svg>
-              <svg v-else class="m-auto h-6 w-6 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
-              </svg>
+        <!-- MUTE -->
+        <div class="shrink-0" @click="mute()">
+          <Icon v-if="mutePlayer" name="fa6-solid:volume-low" size="28" />
+          <Icon v-else name="fa6-solid:volume-xmark" size="28" />
+        </div>
+
+        <!-- VOLUME -->
+        <div class="shrink-0 mt-1">
+          <div class="relative m-auto w-40">
+            <div @click="volume($event)" ref="volBar" class="bg-grey-dark relative m-auto h-1 cursor-pointer rounded-full bg-gray-200" style="width:100%">
+              <div class="relative flex h-1 justify-end rounded-full bg-black" :style="{'width' : volumeProgress + '%'}"></div>
             </div>
-            <div class="relative m-auto w-9/12 md:w-10/12">
-              <div @click="volume($event)" ref="volBar" class="bg-grey-dark relative m-auto h-1 cursor-pointer rounded-full bg-gray-500" style="width:100%">
-                <div class="relative flex h-1 justify-end rounded-full bg-gradient-to-r from-teal-400 to-blue-500" :style="{'width' : volumeProgress + '%'}"></div>
-              </div>
-              <div class="relative flex h-1 justify-end rounded-full" :style="{'width' : volumeProgress + '%'}">
-                <span id="progressButtonVolume" class="pin-r pin-b absolute -mb-1 h-3 w-3 rounded-full bg-gradient-to-r from-teal-400 to-blue-500 shadow md:h-4 md:w-4"></span>
-              </div>
+            <div class="relative flex h-1 justify-end rounded-full" :style="{'width' : volumeProgress + '%'}">
+              <span id="progressButtonVolume" class="pin-r pin-b absolute -bottom-0.5 h-3 w-3 rounded-full bg-black md:h-4 md:w-4"></span>
             </div>
           </div>
         </div>
+
       </div>
+    </div>
 
   </div>
 </template>
@@ -156,26 +163,6 @@
 <script>
 /*
 import Track21 from "/music/fun-at-noise.mp3";
-import Track20 from "/music/soul-of-space.mp3";
-import Track19 from "/music/under-the-stars.mp3";
-import Track18 from "/music/quantum.mp3";
-import Track17 from "/music/until.mp3";
-import Track16 from "/music/retrospective.mp3";
-import Track15 from "/music/deeper-house.mp3";
-import Track14 from "/music/your-love.mp3";
-import Track13 from "/music/where-did-you-go.mp3";
-import Track12 from "/music/feelings-of-youth.mp3";
-import Track11 from "/music/sunset-extented-version.mp3";
-import Track10 from "/music/by-my-side.mp3";
-import Track9 from "/music/prey.mp3";
-import Track8 from "/music/sunset.mp3";
-import Track7 from "/music/atmosphere.mp3";
-import Track6 from "/music/big-tree.mp3";
-import Track5 from "/music/eximinds-trance.mp3";
-import Track4 from "/music/mama-ya-tancuyu.mp3";
-import Track3 from "/music/black-beach.mp3";
-import Track2 from "/music/tichaya-pravda.mp3";
-import Track1 from "/music/teachers-preach.mp3";
 */
 
 import { Howl, Howler } from 'howler';
@@ -190,7 +177,7 @@ export default {
   setup(){
 
       useHead({
-        titleTemplate: '%s | PsySystem Records',
+        titleTemplate: '%s | Музыка',
       })
 
       const audios = ref([
