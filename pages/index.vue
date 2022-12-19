@@ -283,7 +283,7 @@ export default {
         },
         {
           file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454189/music/sunset-extented-version.mp3",
-          name: "SunSet (Extended Version)",
+          name: "SunSet (Extended)",
           artist: "TheFubon",
           date: "09.02.2021",
           cover: "/cover/sunset-extended-version.jpg",
