@@ -39,6 +39,8 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image-edge',
+    'nuxt-headlessui',
+    'nuxt-icon',
   ],
 
   tailwindcss: {
@@ -57,5 +59,9 @@ export default defineNuxtConfig({
       xl: 1280,
       '2xl': 1536,
     },
+  },
+
+  headlessui: {
+    prefix: 'Headless'
   },
 })
