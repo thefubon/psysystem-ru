@@ -1,5 +1,5 @@
 <template>
-  <div class="py-16">
+  <div class="pt-16 pb-32">
 
     <main class="container flex gap-20">
 
@@ -37,7 +37,7 @@
               </div>
               <p class="text-xs text-gray-500">Выпущено: {{audio.date}}</p>
             </div>
-            
+
           </div>
         </div>
         
@@ -81,12 +81,21 @@
 
     </main>
 
+    <!-- MINI PLAYER -->
+
+    <div class="bg-gray-100 fixed bottom-0 inset-x-0">
+        <div class="container h-16 flex justify-between items-center">
+
+            TEST
+
+        </div>
+    </div>
 
 
 
 
       <!-- MINI PLAYER -->
-      <div class="bg-gray-300">
+      <div class="bg-gray-300 hidden">
         <div class="container flex h-16 items-center justify-around">
           <div class="hidden w-2/12 items-center md:flex" v-for="(audio,indexo) in audios.slice(index, index + 1)" :key="indexo">
             <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:80px" quality="80" :src="audio.cover" :alt="audio.name" width="40" height="40" />
@@ -181,7 +190,7 @@ export default {
   setup(){
 
       useHead({
-        titleTemplate: '%s | Музыка',
+        titleTemplate: '%s | PsySystem Records',
       })
 
       const audios = ref([

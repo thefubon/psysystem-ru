@@ -5,7 +5,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      title: 'PsySystem Records',
+      title: 'Fubon',
       titleTemplate: '%s',
       meta: [
         { name: 'robots', content: 'noindex, nofollow' },
