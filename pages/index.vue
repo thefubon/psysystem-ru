@@ -1,14 +1,14 @@
 <template>
   <div class="pt-6 md:pt-16 pb-32">
 
-    <main class="container flex flex-col md:flex-row gap-20">
+    <main class="container flex flex-col md:flex-row gap-4 md:gap-10 lg:gap-12 xl:gap-16">
 
       <!-- NEW TRACK -->
       <div class="flex-1 space-y-8">
 
         <!-- PLAYLIST -->
         <!-- :class="indexo == index ? 'bg-gray-100':''" -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8" id="journal-scroll">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8" id="journal-scroll">
           <div v-for="(audio,indexo) in audios" :key="indexo">
             
             <!-- NUMBER -->
@@ -53,7 +53,7 @@
           <div>
             <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo">
               <!-- COVER -->
-              <NuxtImg class="w-[380px] rounded-lg" provider="cloudinary" format="webp" sizes="sm:760px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
+              <NuxtImg class="md:w-[280px] lg:w-[320px] xl:w-[380px] rounded-lg" provider="cloudinary" format="webp" sizes="sm:760px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
 
               <!-- TITLE -->
               <h3 class="text-2xl font-bold">{{audio.name}}</h3>
