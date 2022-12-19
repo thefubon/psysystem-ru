@@ -1,14 +1,14 @@
 <template>
-  <div class="pt-16 pb-32">
+  <div class="pt-4 md:pt-16 pb-32">
 
-    <main class="container flex gap-20">
+    <main class="container flex flex-col md:flex-row gap-20">
 
       <!-- NEW TRACK -->
       <div class="flex-1 space-y-8">
 
         <!-- PLAYLIST -->
         <!-- :class="indexo == index ? 'bg-gray-100':''" -->
-        <div class="grid grid-cols-4 gap-8" id="journal-scroll">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8" id="journal-scroll">
           <div v-for="(audio,indexo) in audios" :key="indexo">
             
             <!-- NUMBER -->
@@ -34,8 +34,8 @@
 
             <div class="mt-2 grid gap-1">
               <div>
-                <h2 class="text-lg font-bold">{{audio.name}}</h2>
-                <p class="text-sm text-gray-600">от {{audio.artist}}</p>
+                <h2 class="text-md md:text-lg font-bold">{{audio.name}}</h2>
+                <p class="text-xs md:text-sm text-gray-600">от {{audio.artist}}</p>
               </div>
               <p class="text-xs text-gray-500">Выпущено: {{audio.date}}</p>
             </div>
@@ -46,7 +46,7 @@
       </div>
 
       <!-- PLAYER -->
-      <div class="shrink-0">
+      <div class="shrink-0 hidden">
         
         <div class="sticky top-28 space-y-16">
           
@@ -95,55 +95,57 @@
     <!-- MINI PLAYER -->
 
     <div class="bg-white border-t fixed bottom-0 inset-x-0">
-      <div class="container h-16 flex justify-between items-center gap-8">
+      <div class="container py-4 md:py-0 md:h-16 flex flex-col-reverse md:flex-row justify-between items-center gap-4">
 
-        <!-- COVER -->
-        <div class="flex items-center gap-4" v-for="(audio,indexo) in audios.slice(index, index + 1)" :key="indexo">
-          <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:80px" quality="80" :src="audio.cover" :alt="audio.name" width="40" height="40" />
+        <div class="flex w-full items-center">
+          <!-- COVER -->
+          <div class="flex-1 flex items-center gap-2 md:gap-4" v-for="(audio,indexo) in audios.slice(index, index + 1)" :key="indexo">
+            <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:80px" quality="80" :src="audio.cover" :alt="audio.name" width="40" height="40" />
 
-          <!-- ABOUT -->
-          <div class="flex flex-col font-semibold">
-            <p class="line-clamp-1">{{audio.name}}</p>
-            <p class="text-xs text-gray-600">{{audio.artist}}</p>
+            <!-- ABOUT -->
+            <div class="flex flex-col font-semibold">
+              <p class="line-clamp-1">{{audio.name}}</p>
+              <p class="text-xs text-gray-600">{{audio.artist}}</p>
+            </div>
+          </div>
+
+          <!-- PLAY BUTTON -->
+          <div class="shrink-0">
+            <Icon v-if="!pauseTrack" @click="play()" name="ic:outline-play-circle-filled" size="40" class="text-black hover:cursor-pointer inline-block" />
+            <Icon v-else @click="pause()" name="ic:outline-pause-circle-filled" size="40" class="text-black hover:cursor-pointer inline-block" />
           </div>
         </div>
 
-        <!-- PLAY BUTTON -->
-        <div class="">
-          <Icon v-if="!pauseTrack" @click="play()" name="ic:outline-play-circle-filled" size="40" class="text-black hover:cursor-pointer inline-block" />
-          <Icon v-else @click="pause()" name="ic:outline-pause-circle-filled" size="40" class="text-black hover:cursor-pointer inline-block" />
-        </div>
-
         <!-- TIMER -->
-        <div class="flex-1 flex items-center gap-4">
-          <div class="shrink-0 w-12">
+        <div class="flex-1 flex items-center gap-4 w-full">
+          <div class="shrink-0 w-12 hidden">
             {{timer}}
           </div>
 
           <div class="flex-1 mt-1">
-            <div class="relative">
-              <div @click="seek($event)" ref="progress" class="bg-grey-dark h-1 cursor-pointer rounded-full bg-gray-200">
+            <div class="relative w-full">
+              <div @click="seek($event)" ref="progress" class="h-1 cursor-pointer rounded-full bg-gray-200">
                 <div class="relative flex h-1 w-full justify-end rounded-full bg-black" :style="{'width' : step + '%'}"></div>
               </div>
               <div class="relative flex h-1 w-full justify-end rounded-full" :style="{'width' : step + '%'}">
-                <span id="progressButtonTimer" class="pin-r pin-b absolute -bottom-0.5 h-3 w-3 rounded-full bg-black md:h-4 md:w-4"></span>
+                <span id="progressButtonTimer" class="pin-r pin-b absolute -bottom-0 md:-bottom-0.5 h-3 w-3 rounded-full bg-black md:h-4 md:w-4"></span>
               </div>
             </div>
           </div>
           
-          <div class="shrink-0 w-12">
+          <div class="shrink-0 w-12 hidden">
             {{duration}}
           </div>
         </div>
 
         <!-- MUTE -->
-        <div class="shrink-0" @click="mute()">
+        <div class="shrink-0 hidden" @click="mute()">
           <Icon v-if="mutePlayer" name="fa6-solid:volume-low" size="28" />
           <Icon v-else name="fa6-solid:volume-xmark" size="28" />
         </div>
 
         <!-- VOLUME -->
-        <div class="shrink-0 mt-1">
+        <div class="shrink-0 mt-1 hidden">
           <div class="relative m-auto w-40">
             <div @click="volume($event)" ref="volBar" class="bg-grey-dark relative m-auto h-1 cursor-pointer rounded-full bg-gray-200" style="width:100%">
               <div class="relative flex h-1 justify-end rounded-full bg-black" :style="{'width' : volumeProgress + '%'}"></div>
