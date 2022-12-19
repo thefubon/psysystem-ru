@@ -5,15 +5,49 @@
 
         <!-- NEW TRACK -->
         <div class="flex-1 space-y-8">
-          <!-- HEADING TITLE -->
-          <h2 class="text-xl font-bold">Синглы</h2>
-
-          <img class="w-full h-40" src="https://res-console.cloudinary.com/drjdwwxf7/thumbnails/v1/video/upload/v1669392375/bXVzaWMvdGltZS1mb3ItZnJlZWRvbQ==/preview" alt="">
 
           <!-- PLAYLIST -->
-          <div class="grid grid-cols-3 gap-6">
-            <div class="bg-gray-300 h-56" v-for="n in 24" :key="n">
-              {{ n }}
+          <div class="grid grid-cols-4 gap-8" id="journal-scroll">
+            <div :class="indexo == index ? 'border-2 border-yellow-500':''" v-for="(audio,indexo) in audios" :key="indexo">
+              
+              <!-- NUMBER -->
+              <div class="hidden">
+                {{indexo + 1}}
+              </div>
+              
+              <!-- COVER -->
+              <div class="hover:cursor-pointer" @click="selectSound(indexo)">
+                <NuxtImg class="rounded-lg" provider="cloudinary" format="webp" sizes="sm:760px" quality="100" :src="audio.cover" :alt="audio.name" width="480" height="480" />
+
+                <!-- NEW STATUS -->
+                <span v-if="audio.new">New</span>
+
+                <!-- BUTTON PLAY -->
+                <div>
+                  <svg v-if="state.audioPlaying[indexo]" class="h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" />
+                  </svg>
+                  <svg v-else class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- ABOUT TRACK -->
+              <div>
+                {{audio.name}}
+                {{audio.artist}}
+                {{audio.date}}
+              </div>
+
+              <!-- MUSIC SERVICES -->
+              <div class="flex items-center" v-for="(sub, index) in audio.sub" :key="index"> 
+                <NuxtLink :to="sub.url" target="_blank">
+                  <img class="w-8 shadow-lg rounded-lg" :src="sub.icon" :alt="sub.name">
+                </NuxtLink>
+              </div>
+
             </div>
           </div>
           
@@ -60,46 +94,7 @@
 
 
     <div class="mt-[100px]">
-      <!-- CONTROLLS CONTAINER -->
-      <div class="w-10/12 mx-auto">
-        
-        <!-- PLAYLIST -->
-        <div class="">
-          <ul class="m-auto mb-2 w-full overflow-auto pt-2 grid grid-cols-6" style="max-height:100%" id="journal-scroll">
-            <li :class="indexo == index ? 'bg-slate-300':''" class="m-auto flex flex-col w-11/12 rounded p-4" v-for="(audio,indexo) in audios" :key="indexo">
-              <div class="w-full flex flex-col cursor-pointer" @click="selectSound(indexo)">
-                <div class="m-auto flex items-center gap-4 font-semibold">
-                  {{indexo + 1}}
 
-                  <NuxtImg class="rounded-md w-[480px]" provider="cloudinary" format="webp" sizes="sm:760px" quality="100" :src="audio.cover" :alt="audio.name" width="480" height="480" />
-                </div>
-                <div class="m-auto w-3/5 text-left font-semibold">
-                  <div class="text-sm font-semibold">
-                    <p>{{audio.name}}</p>
-                    <p class="text-xs text-gray-500">{{audio.artist}}</p>
-                    <div class="px-2 py-1 bg-yellow-400 inline-block" v-if="audio.new">New</div>
-                  </div>
-                </div>
-                <div class="m-auto w-1/5">
-                  <svg v-if="state.audioPlaying[indexo]" class="m-auto h-6 w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z" />
-                  </svg>
-                  <svg v-else class="m-auto h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-              </div>
-
-              <div class="flex items-center" v-for="(sub, index) in audio.sub" :key="index"> 
-                <NuxtLink :to="sub.url" target="_blank">
-                  <img class="w-8 shadow-lg rounded-lg" :src="sub.icon" :alt="sub.name">
-                </NuxtLink>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
       <!-- MINI PLAYER -->
       <div class="bg-white">
         <div class="flex h-16 items-center justify-around px-4">
@@ -205,6 +200,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669392375/music/time-for-freedom.mp3",
             name: "Time For Freedom",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/time-for-freedom.png",
             sub: [
               {
@@ -220,6 +216,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669737299/music/flying-phoenix.mp3",
             name: "Flying Phoenix",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/flying-pohenix.png",
             sub: [
               {
@@ -235,6 +232,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454140/music/fun-at-noise.mp3",
             name: "Fun At Noise",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/fun-at-noise.png",
             sub: [
               {
@@ -249,6 +247,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454139/music/soul-of-space.mp3",
             name: "Soul of Space",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/soul-of-space.png",
             sub: [
               {
@@ -263,6 +262,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454149/music/under-the-stars.mp3",
             name: "Under The Stars",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/under-the-stars.jpg",
             sub: [
               {
@@ -277,6 +277,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454185/music/quantum.mp3",
             name: "Quantum",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/quantum.jpg",
             sub: [
               {
@@ -291,6 +292,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454144/music/until.mp3",
             name: "Until",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/until.jpg",
             sub: [
               {
@@ -305,6 +307,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454168/music/retrospective.mp3",
             name: "Retrospective",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/retrospective.jpg",
             sub: [
               {
@@ -319,6 +322,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454171/music/deeper-house.mp3",
             name: "Deeper House",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/deeper-house.jpg",
             sub: [
               {
@@ -333,6 +337,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454154/music/your-love.mp3",
             name: "Your Love",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/your-love.jpg",
             sub: [
               {
@@ -347,6 +352,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454184/music/where-did-you-go.mp3",
             name: "Where Did You Go",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/where-did-you-go.jpg",
             sub: [
               {
@@ -361,6 +367,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454199/music/feelings-of-youth.mp3",
             name: "Feelings of Youth",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/feelings-of-youth.jpg",
             sub: [
               {
@@ -375,6 +382,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454189/music/sunset-extented-version.mp3",
             name: "SunSet (Extended Version)",
             artist: "TheFubon",
+            date: "12.12.2022",
             cover: "/cover/sunset-extended-version.jpg",
             sub: [
               {
@@ -389,6 +397,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454166/music/by-my-side.mp3",
             name: "By My Side",
             artist: "yagelProject",
+            date: "12.12.2022",
             cover: "/cover/by-my-side.png",
             sub: [
               {
@@ -403,6 +412,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454176/music/prey.mp3",
             name: "Prey",
             artist: "yagelProject",
+            date: "12.12.2022",
             cover: "/cover/prey.png",
             sub: [
               {
@@ -417,6 +427,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454196/music/sunset.mp3",
             name: "SunSet",
             artist: "yagelProject",
+            date: "12.12.2022",
             cover: "/cover/sunset.png",
             sub: [
               {
@@ -431,6 +442,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454148/music/atmosphere.mp3",
             name: "Atmosphere",
             artist: "yagelProject",
+            date: "12.12.2022",
             cover: "/cover/atmosphere.png",
             sub: [
               {
@@ -445,6 +457,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454122/music/big-tree.mp3",
             name: "Big Tree",
             artist: "yagelProject",
+            date: "12.12.2022",
             cover: "/cover/big-tree.png",
             sub: [
               {
@@ -459,6 +472,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454172/music/eximinds-trance.mp3",
             name: "Eximinds Trance",
             artist: "yagelProject",
+            date: "12.12.2022",
             cover: "/cover/eximinds-trance.png",
             sub: [
               {
@@ -473,6 +487,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454165/music/mama-ya-tancuyu.mp3",
             name: "Мама, Я Танцую (PsyTrance RMX)",
             artist: "yagelProject",
+            date: "12.12.2022",
             cover: "/cover/mama-ya-tancuyu.jpg",
             sub: [
               {
@@ -487,6 +502,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454145/music/black-beach.mp3",
             name: "Black Beach",
             artist: "yagelProject",
+            date: "12.12.2022",
             cover: "/cover/black-beach.png",
             sub: [
               {
@@ -501,6 +517,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454147/music/tichaya-pravda.mp3",
             name: "Тихая правда",
             artist: "Перекати поле",
+            date: "12.12.2022",
             cover: "/cover/tichaya-pravda.png",
             sub: [
               {
@@ -515,6 +532,7 @@ export default {
             file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454205/music/teachers-preach.mp3",
             name: "Teacher's Preach",
             artist: "yagelProject",
+            date: "12.12.2022",
             cover: "/cover/teachers-preach.png",
             sub: [
               {
