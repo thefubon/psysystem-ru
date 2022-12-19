@@ -9,7 +9,7 @@
       </div>
 
       <div class="text-sm text-gray-300">
-        Beta 1.0
+        Beta 1.0.0
       </div>
     </div>
   </header>
