@@ -32,7 +32,10 @@ export default defineNuxtConfig({
       ],
       bodyAttrs: {
         class: 'antialiased'
-      }
+      },
+      script: [
+        { src: '/js/liveinternet.js' }
+      ],
     }
   },
 

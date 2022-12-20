@@ -83,8 +83,9 @@
             </div>
           </div>
 
-          <div>
+          <div class="grid gap-4">
             <p class="text-sm text-gray-600">&copy; PsySystem Records</p>
+            <a href="https://www.liveinternet.ru/click" target="_blank"><img src="https://counter.yadro.ru/logo?26.1" title="LiveInternet: показано число посетителей за сегодня" alt="" style="border:0" width="88" height="15"/></a>
           </div>
 
         </div>
