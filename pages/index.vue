@@ -46,7 +46,7 @@
       </div>
 
       <!-- PLAYER -->
-      <div class="shrink-0 hidden md:block">
+      <div class="shrink-0 md:w-[280px] lg:w-[320px] xl:w-[380px] hidden md:block">
         
         <div class="sticky top-28 space-y-16">
           
@@ -56,8 +56,10 @@
               <NuxtImg class="md:w-[280px] lg:w-[320px] xl:w-[380px] rounded-lg" provider="cloudinary" format="webp" sizes="sm:760px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
 
               <!-- TITLE -->
-              <h3 class="text-2xl font-bold">{{audio.name}}</h3>
-              <p class="text-grey">{{audio.artist}}</p>
+              <div class="mt-4">
+                <h3 class="text-2xl font-bold">{{audio.name}}</h3>
+                <p class="text-grey">{{audio.artist}}</p>
+              </div>
             </div>
 
             <!-- CONTROLS -->
@@ -84,8 +86,11 @@
           </div>
 
           <div class="grid gap-4">
-            <p class="text-sm text-gray-600">&copy; PsySystem Records</p>
-            <a href="https://www.liveinternet.ru/click" target="_blank"><img src="https://counter.yadro.ru/logo?26.1" title="LiveInternet: показано число посетителей за сегодня" alt="" style="border:0" width="88" height="15"/></a>
+            <div class="space-y-2">
+              <p class="text-sm font-bold">&copy; PsySystem Records</p>
+              <p class="text-sm text-gray-600">PsySystem — это Российский лейбл звукозаписи, в основном выпускающий музыку в стиле пси-транс. Был основан в 2006 году, и является моим личным лейблом, где выпускает только понравившиеся мне музыка, в основном это свои синглы и работы сторонних исполнителей, в большинстве своем в жанре «пси-транс».</p>
+            </div>
+            <a class="block" href="https://www.liveinternet.ru/click" target="_blank"><img src="https://counter.yadro.ru/logo?26.1" title="LiveInternet: показано число посетителей за сегодня" alt="" style="border:0" width="88" height="15"/></a>
           </div>
 
         </div>
