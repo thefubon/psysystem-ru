@@ -20,7 +20,7 @@
             <div class="hover:cursor-pointer relative group overflow-hidden rounded-lg" @click="selectSound(indexo)">
               <span class="opacity-0 group-hover:opacity-100 duration-150 absolute inset-0 bg-black/50"></span>
 
-              <NuxtImg provider="cloudinary" format="webp" sizes="sm:250px" quality="80" :src="audio.cover" :alt="audio.name" width="250" height="250" />
+              <NuxtImg provider="cloudinary" format="webp" sizes="sm:480px" quality="80" :src="audio.cover" :alt="audio.name" width="250" height="250" />
 
               <!-- NEW STATUS -->
               <span class="absolute top-3 right-3 bg-yellow-400 px-1.5 text-black rounded-full text-xs" v-if="audio.new">New</span>
@@ -53,7 +53,7 @@
           <div>
             <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo">
               <!-- COVER -->
-              <NuxtImg class="md:w-[280px] lg:w-[320px] xl:w-[380px] rounded-lg" provider="cloudinary" format="webp" sizes="sm:760px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
+              <NuxtImg class="md:w-[280px] lg:w-[320px] xl:w-[380px] rounded-lg" provider="cloudinary" format="webp" sizes="sm:520px" quality="80" :src="audio.cover" :alt="audio.name" width="380" height="380" />
 
               <!-- TITLE -->
               <div class="mt-4">
