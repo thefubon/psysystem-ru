@@ -2,15 +2,15 @@
   <div class="hs-dropdown relative inline-flex [--placement:top-right]">
     <button id="hs-dropup" type="button" class="hs-dropdown-toggle inline-flex gap-x-2">
       <span v-if="$colorMode.preference === 'system'">
-        <Icon class="text-slate-300" name="uil:desktop" size="24" />
+        <Icon class="text-slate-300" name="uil:desktop" size="26" />
       </span>
 
       <span v-else-if="$colorMode.preference === 'light'">
-        <Icon class="text-slate-300" name="uil:sun" size="24" />
+        <Icon class="text-slate-300" name="uil:sun" size="26" />
       </span>
 
       <span v-else-if="$colorMode.preference === 'dark'">
-        <Icon class="text-slate-300" name="uil:moon" size="24" />
+        <Icon class="text-slate-300" name="uil:moon" size="26" />
       </span>
     </button>
 
