@@ -31,7 +31,7 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', sizes: '144x144', href: '/touch-icon-ipad-retina.png' },
       ],
       bodyAttrs: {
-        class: 'antialiased'
+        class: 'antialiased dark:bg-black'
       },
       script: [
         { src: '/js/liveinternet.js' }
@@ -44,6 +44,7 @@ export default defineNuxtConfig({
     '@nuxt/image-edge',
     'nuxt-headlessui',
     'nuxt-icon',
+    '@nuxtjs/color-mode',
   ],
 
   tailwindcss: {
@@ -66,5 +67,11 @@ export default defineNuxtConfig({
 
   headlessui: {
     prefix: 'Headless'
+  },
+
+  colorMode: {
+    classSuffix: '',
+    fallback: 'light',
+    storageKey: 'color-mode',
   },
 })

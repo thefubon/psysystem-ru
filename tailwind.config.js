@@ -1,8 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
-
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -11,7 +8,9 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
     "./app.vue",
+    "node_modules/preline/dist/*.js",
   ],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -33,8 +32,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: colors.yellow,
-        secondary: colors.slate,
+        primary: '#FCD34D',
       },
       spacing: {
         13: '3.25rem',
@@ -44,5 +42,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('preline/plugin'),
+  ],
 }
