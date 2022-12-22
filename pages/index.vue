@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-6 md:pt-16 pb-32">
+  <div class="pt-4 pb-32">
 
     <main class="container flex flex-col md:flex-row gap-4 md:gap-10 lg:gap-12 xl:gap-16">
 
@@ -48,7 +48,7 @@
       <!-- PLAYER -->
       <div class="shrink-0 md:w-[280px] lg:w-[320px] xl:w-[380px] hidden md:block">
         
-        <div class="sticky top-28 space-y-16">
+        <div class="sticky top-24 space-y-8">
           
           <div>
             <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo">
@@ -90,7 +90,12 @@
               <p class="text-sm font-bold">&copy; PsySystem Records</p>
               <p class="text-sm text-gray-600">PsySystem — это Российский лейбл звукозаписи, в основном выпускающий музыку в стиле пси-транс. Был основан в 2006 году, и является личным лейблом, где выпускаются только понравившиеся музыка, в основном это свои синглы и работы сторонних исполнителей, в большинстве своем в жанре «пси-транс».</p>
             </div>
-            <a class="block" href="https://www.liveinternet.ru/click" target="_blank"><img src="https://counter.yadro.ru/logo?26.1" title="LiveInternet: показано число посетителей за сегодня" alt="" style="border:0" width="88" height="15"/></a>
+
+            <div class="flex items-center gap-4 text-xs text-gray-400">
+              <a class="block" href="https://www.liveinternet.ru/click" target="_blank"><img src="https://counter.yadro.ru/logo?26.1" title="LiveInternet: показано число посетителей за сегодня" alt="" style="border:0" width="88" height="15"/></a>
+
+              <span>Версия: 1.1.0</span>
+            </div>
           </div>
 
         </div>
@@ -100,7 +105,7 @@
 
     <!-- MINI PLAYER -->
 
-    <div class="bg-white border-t fixed bottom-0 inset-x-0">
+    <div class="fixed bottom-0 inset-x-0 backdrop-blur-2xl bg-white/90">
       <div class="container py-4 md:py-0 md:h-16 flex flex-col-reverse md:flex-row justify-between items-center gap-4">
 
         <div class="flex w-full md:w-auto items-center gap-4">
@@ -130,7 +135,7 @@
 
           <div class="flex-1 mt-1">
             <div class="relative w-full">
-              <div @click="seek($event)" ref="progress" class="h-1 cursor-pointer rounded-full bg-gray-200">
+              <div @click="seek($event)" ref="progress" class="h-1 cursor-pointer rounded-full bg-gray-400">
                 <div class="relative flex h-1 w-full justify-end rounded-full bg-black" :style="{'width' : step + '%'}"></div>
               </div>
               <div class="relative flex h-1 w-full justify-end rounded-full" :style="{'width' : step + '%'}">
@@ -153,7 +158,7 @@
         <!-- VOLUME -->
         <div class="shrink-0 mt-1 hidden md:flex">
           <div class="relative m-auto w-40">
-            <div @click="volume($event)" ref="volBar" class="bg-grey-dark relative m-auto h-1 cursor-pointer rounded-full bg-gray-200" style="width:100%">
+            <div @click="volume($event)" ref="volBar" class="bg-grey-dark relative m-auto h-1 cursor-pointer rounded-full bg-gray-400" style="width:100%">
               <div class="relative flex h-1 justify-end rounded-full bg-black" :style="{'width' : volumeProgress + '%'}"></div>
             </div>
             <div class="relative flex h-1 justify-end rounded-full" :style="{'width' : volumeProgress + '%'}">
