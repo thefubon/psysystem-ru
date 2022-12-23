@@ -35,9 +35,9 @@
             <div class="mt-2 grid gap-1">
               <div>
                 <h2 class="text-md md:text-lg font-bold dark:text-gray-300">{{audio.name}}</h2>
-                <p class="text-xs md:text-sm text-gray-500 dark:text-white/50">от {{audio.artist}}</p>
+                <p class="text-xs md:text-sm text-gray-500 dark:text-gray-300/75">от {{audio.artist}}</p>
               </div>
-              <p class="text-xs text-gray-500 dark:text-white/50">Выпущено: {{audio.date}}</p>
+              <p class="text-xs text-gray-500 dark:text-gray-300/75">Выпущено: {{audio.date}}</p>
             </div>
 
           </div>
@@ -58,14 +58,14 @@
               <!-- TITLE -->
               <div class="mt-4">
                 <h3 class="text-2xl font-bold dark:text-gray-300">{{audio.name}}</h3>
-                <p class="text-grey dark:text-white/50">{{audio.artist}}</p>
+                <p class="text-grey dark:text-gray-300/75">{{audio.artist}}</p>
               </div>
             </div>
 
             <!-- CONTROLS -->
             <div class="flex justify-between items-center gap-4">
               <div class="text-grey-darker rounded-full p-1 dark:text-gray-300">
-                <svg @click="random = !random" :class="random ? 'text-red-500':''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.59 12.83L4.4 15c-.58.58-1.59 1-2.4 1H0v-2h2c.29 0 .8-.2 1-.41l2.17-2.18 1.42 1.42zM16 4V1l4 4-4 4V6h-2c-.29 0-.8.2-1 .41l-2.17 2.18L9.4 7.17 11.6 5c.58-.58 1.59-1 2.41-1h2zm0 10v-3l4 4-4 4v-3h-2c-.82 0-1.83-.42-2.41-1l-8.6-8.59C2.8 6.21 2.3 6 2 6H0V4h2c.82 0 1.83.42 2.41 1l8.6 8.59c.2.2.7.41.99.41h2z" /></svg>
+                <svg @click="random = !random" :class="random ? 'text-primary':''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M6.59 12.83L4.4 15c-.58.58-1.59 1-2.4 1H0v-2h2c.29 0 .8-.2 1-.41l2.17-2.18 1.42 1.42zM16 4V1l4 4-4 4V6h-2c-.29 0-.8.2-1 .41l-2.17 2.18L9.4 7.17 11.6 5c.58-.58 1.59-1 2.41-1h2zm0 10v-3l4 4-4 4v-3h-2c-.82 0-1.83-.42-2.41-1l-8.6-8.59C2.8 6.21 2.3 6 2 6H0V4h2c.82 0 1.83.42 2.41 1l8.6 8.59c.2.2.7.41.99.41h2z" /></svg>
               </div>
               <div class="text-grey-darker rounded-full p-1 dark:text-gray-300">
                 <svg @click="prevButton ? previous() : ''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4 5h3v10H4V5zm12 0v10l-9-5 9-5z" /></svg>
@@ -80,21 +80,21 @@
                 <svg @click="nextButton ? next() : ''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 5h3v10h-3V5zM4 5l9 5-9 5V5z" /></svg>
               </div>
               <div class="text-grey-darker rounded-full p-1 dark:text-gray-300">
-                <svg @click="repeat = !repeat" :class="repeat ? 'text-red-500':''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4a2 2 0 0 0-2 2v6H0l4 4 4-4H5V6h7l2-2H5zm10 4h-3l4-4 4 4h-3v6a2 2 0 0 1-2 2H6l2-2h7V8z" /></svg>
+                <svg @click="repeat = !repeat" :class="repeat ? 'text-primary':''" class="h-8 w-8 cursor-pointer" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4a2 2 0 0 0-2 2v6H0l4 4 4-4H5V6h7l2-2H5zm10 4h-3l4-4 4 4h-3v6a2 2 0 0 1-2 2H6l2-2h7V8z" /></svg>
               </div>
             </div>
           </div>
 
           <div class="grid gap-4">
             <div class="space-y-2">
-              <p class="text-sm font-bold dark:text-gray-300">&copy; PsySystem Records</p>
-              <p class="text-sm text-gray-600 dark:text-white/30">PsySystem — это Российский лейбл звукозаписи, в основном выпускающий музыку в стиле пси-транс. Был основан в 2006 году, и является личным лейблом, где выпускаются только понравившиеся музыка, в основном это свои синглы и работы сторонних исполнителей, в большинстве своем в жанре «пси-транс».</p>
+              <p class="text-sm font-bold dark:text-gray-300/75">&copy; PsySystem Records</p>
+              <p class="text-sm text-gray-600 dark:text-gray-300/75">PsySystem — это Российский лейбл звукозаписи, в основном выпускающий музыку в стиле пси-транс. Был основан в 2006 году, и является личным лейблом, где выпускаются только понравившиеся музыка, в основном это свои синглы и работы сторонних исполнителей, в большинстве своем в жанре «пси-транс».</p>
             </div>
 
-            <div class="flex items-center gap-4 text-xs text-gray-400">
+            <div class="flex items-center gap-4 text-xs dark:text-gray-300/75">
               <a class="block" href="https://www.liveinternet.ru/click" target="_blank"><img src="https://counter.yadro.ru/logo?26.1" title="LiveInternet: показано число посетителей за сегодня" alt="" style="border:0" width="88" height="15"/></a>
 
-              <span>Версия: 1.2.0</span>
+              <span>Версия: 1.2.1</span>
             </div>
           </div>
 
@@ -105,7 +105,7 @@
 
     <!-- MINI PLAYER -->
 
-    <div class="fixed bottom-0 inset-x-0 backdrop-blur-2xl bg-white/90">
+    <div class="fixed bottom-0 inset-x-0 backdrop-blur-lg bg-white/75 dark:backdrop-blur-xl dark:bg-black/50">
       <div class="container py-4 md:py-0 md:h-16 flex flex-col-reverse md:flex-row justify-between items-center gap-4">
 
         <div class="flex w-full md:w-auto items-center gap-4">
@@ -115,31 +115,31 @@
 
             <!-- ABOUT -->
             <div class="flex flex-col font-semibold">
-              <p class="line-clamp-1">{{audio.name}}</p>
-              <p class="text-xs text-gray-600">{{audio.artist}}</p>
+              <p class="line-clamp-1 dark:text-gray-300">{{audio.name}}</p>
+              <p class="text-xs text-gray-600 dark:text-gray-300/75">{{audio.artist}}</p>
             </div>
           </div>
 
           <!-- PLAY BUTTON -->
           <div class="shrink-0">
-            <Icon v-if="!pauseTrack" @click="play()" name="ic:outline-play-circle-filled" size="40" class="text-black hover:cursor-pointer inline-block" />
-            <Icon v-else @click="pause()" name="ic:outline-pause-circle-filled" size="40" class="text-black hover:cursor-pointer inline-block" />
+            <Icon v-if="!pauseTrack" @click="play()" name="ic:outline-play-circle-filled" size="40" class="text-black dark:text-gray-300 hover:cursor-pointer inline-block" />
+            <Icon v-else @click="pause()" name="ic:outline-pause-circle-filled" size="40" class="text-black dark:text-gray-300 hover:cursor-pointer inline-block" />
           </div>
         </div>
 
         <!-- TIMER -->
         <div class="flex-1 flex items-center gap-4 w-full">
-          <div class="shrink-0 w-12 hidden md:flex">
+          <div class="shrink-0 w-12 hidden md:flex dark:text-gray-300">
             {{timer}}
           </div>
 
           <div class="flex-1 mt-1">
             <div class="relative w-full">
-              <div @click="seek($event)" ref="progress" class="h-1 cursor-pointer rounded-full bg-gray-400">
-                <div class="relative flex h-1 w-full justify-end rounded-full bg-black" :style="{'width' : step + '%'}"></div>
+              <div @click="seek($event)" ref="progress" class="h-1 cursor-pointer rounded-full bg-gray-400 dark:bg-gray-300/75">
+                <div class="relative flex h-1 w-full justify-end rounded-full bg-black dark:bg-primary" :style="{'width' : step + '%'}"></div>
               </div>
               <div class="relative flex h-1 w-full justify-end rounded-full" :style="{'width' : step + '%'}">
-                <span id="progressButtonTimer" class="pin-r pin-b absolute -bottom-0 md:-bottom-0.5 h-3 w-3 rounded-full bg-black md:h-4 md:w-4"></span>
+                <span id="progressButtonTimer" class="pin-r pin-b absolute -bottom-0 md:-bottom-0.5 h-3 w-3 rounded-full bg-black dark:bg-gray-300 md:h-4 md:w-4"></span>
               </div>
             </div>
           </div>

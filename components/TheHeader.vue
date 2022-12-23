@@ -1,5 +1,5 @@
 <template>
-  <header class="sticky top-0 z-10 backdrop-blur-2xl bg-white/90 dark:bg-black/50">
+  <header class="sticky top-0 z-10 backdrop-blur-xl bg-white/75 dark:backdrop-blur-xl dark:bg-black/50">
     <div class="container flex h-16 md:h-20 items-center justify-between font-medium">
       <div>
         <a class="inline-block" href="https://fubon.ru">
@@ -11,8 +11,8 @@
 
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-3 text-sm text-gray-300">
-          <a class="hover:text-black block dark:hover:text-primary duration-150" href="https://vk.com/thefubon" target="_blank"><Icon name="mdi:vk" size="24"/></a>
-          <a class="hover:text-black block dark:hover:text-primary duration-150" href="https://www.instagram.com/thefubon/" target="_blank"><Icon name="ph:instagram-logo-bold" size="24"/></a>
+          <a class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" href="https://vk.com/thefubon" target="_blank"><Icon name="mdi:vk" size="24"/></a>
+          <a class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" href="https://www.instagram.com/thefubon/" target="_blank"><Icon name="ph:instagram-logo-bold" size="24"/></a>
         </div>
 
         <AppColorMode/>
