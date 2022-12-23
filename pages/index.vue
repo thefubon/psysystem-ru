@@ -103,7 +103,9 @@
 
     </main>
 
-    <!-- MINI PLAYER -->
+    <!--
+      MINI PLAYER
+    -->
 
     <div class="fixed bottom-0 inset-x-0 backdrop-blur-lg bg-white/75 dark:backdrop-blur-xl dark:bg-black/50">
       <div class="container py-4 md:py-0 md:h-16 flex flex-col-reverse md:flex-row justify-between items-center gap-4">
