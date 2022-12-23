@@ -146,15 +146,15 @@
             </div>
           </div>
           
-          <div class="shrink-0 w-12 hidden md:flex">
+          <div class="shrink-0 w-12 hidden md:flex dark:text-gray-300">
             {{duration}}
           </div>
         </div>
 
         <!-- MUTE -->
-        <div class="shrink-0 hidden md:flex" @click="mute()">
-          <Icon v-if="mutePlayer" name="fa6-solid:volume-low" size="28" />
-          <Icon v-else name="fa6-solid:volume-xmark" size="28" />
+        <div class="shrink-0 hidden md:flex cursor-pointer" @click="mute()">
+          <Icon class="dark:text-gray-300" v-if="mutePlayer" name="fa6-solid:volume-low" size="28" />
+          <Icon class="dark:text-gray-300" v-else name="fa6-solid:volume-xmark" size="28" />
         </div>
 
         <!-- VOLUME -->
