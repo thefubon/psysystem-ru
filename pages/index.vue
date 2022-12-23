@@ -137,8 +137,8 @@
 
           <div class="flex-1 mt-1">
             <div class="relative w-full">
-              <div @click="seek($event)" ref="progress" class="h-1 cursor-pointer rounded-full bg-gray-400 dark:bg-gray-300/75">
-                <div class="relative flex h-1 w-full justify-end rounded-full bg-black dark:bg-primary" :style="{'width' : step + '%'}"></div>
+              <div @click="seek($event)" ref="progress" class="h-1 cursor-pointer rounded-full bg-gray-400 dark:bg-gray-300/30">
+                <div class="relative flex h-1 w-full justify-end rounded-full bg-black dark:bg-gray-300" :style="{'width' : step + '%'}"></div>
               </div>
               <div class="relative flex h-1 w-full justify-end rounded-full" :style="{'width' : step + '%'}">
                 <span id="progressButtonTimer" class="pin-r pin-b absolute -bottom-0 md:-bottom-0.5 h-3 w-3 rounded-full bg-black dark:bg-gray-300 md:h-4 md:w-4"></span>
@@ -160,8 +160,8 @@
         <!-- VOLUME -->
         <div class="shrink-0 mt-1 hidden md:flex">
           <div class="relative m-auto w-40">
-            <div @click="volume($event)" ref="volBar" class="bg-grey-dark relative m-auto h-1 cursor-pointer rounded-full bg-gray-400 dark:bg-gray-300/75" style="width:100%">
-              <div class="relative flex h-1 justify-end rounded-full bg-black dark:bg-primary" :style="{'width' : volumeProgress + '%'}"></div>
+            <div @click="volume($event)" ref="volBar" class="bg-grey-dark relative m-auto h-1 cursor-pointer rounded-full bg-gray-400 dark:bg-gray-300/30" style="width:100%">
+              <div class="relative flex h-1 justify-end rounded-full bg-black dark:bg-gray-300" :style="{'width' : volumeProgress + '%'}"></div>
             </div>
             <div class="relative flex h-1 justify-end rounded-full" :style="{'width' : volumeProgress + '%'}">
               <span id="progressButtonVolume" class="pin-r pin-b absolute -bottom-0.5 h-3 w-3 rounded-full bg-black md:h-4 md:w-4 dark:bg-gray-300"></span>
