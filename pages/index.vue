@@ -192,7 +192,7 @@ export default {
   setup(){
 
       useHead({
-        titleTemplate: '%s | Музыка',
+        titleTemplate: '%s | PsySystem Records',
       })
 
       const audios = ref([
