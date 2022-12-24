@@ -18,15 +18,15 @@
       <div class="duration z-10 flex flex-col gap-3 rounded-lg bg-white p-4 text-sm shadow-md dark:bg-gray-30">
         <button class="flex items-center gap-x-2" @click="$colorMode.preference = 'system'">
           <Icon name="uil:desktop" size="20" />
-          <span>System</span>
+          <span>Системная тема</span>
         </button>
         <button class="flex items-center gap-x-2" @click="$colorMode.preference = 'light'">
           <Icon name="uil:sun" size="20" />
-          <span>Light</span>
+          <span>Светлая тема</span>
         </button>
         <button class="flex items-center gap-x-2" @click="$colorMode.preference = 'dark'">
           <Icon name="uil:moon" size="20" />
-          <span>Dark</span>
+          <span>Тёмная тема</span>
         </button>
       </div>
     </div>

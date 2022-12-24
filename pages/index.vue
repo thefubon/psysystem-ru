@@ -94,7 +94,7 @@
             <div class="flex items-center gap-4 text-xs dark:text-gray-300/75">
               <a class="block" href="https://www.liveinternet.ru/click" target="_blank"><img src="https://counter.yadro.ru/logo?26.1" title="LiveInternet: показано число посетителей за сегодня" alt="" style="border:0" width="88" height="15"/></a>
 
-              <span>Версия: 1.2.1</span>
+              <span>Версия: 1.2.2</span>
             </div>
           </div>
 
