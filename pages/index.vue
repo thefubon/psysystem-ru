@@ -75,23 +75,23 @@
                       </div>
                     </div>
 
-                    <h4 class="text-lg font-bold">Популярные</h4>
+                    <h4 class="text-lg font-bold dark:text-gray-300/75">Популярные</h4>
                     <div class="grid gap-4 divide-y">
                       <div class="group pt-4" v-for="(sub, index) in audio.sub" :key="index"> 
                         <NuxtLink class="flex justify-between items-center" :to="sub.url" target="_blank">
                           <div class="flex items-center gap-2">
                             <img class="w-8 shadow-lg rounded-lg" :src="sub.icon" :alt="sub.name">
-                            {{ sub.name }}
+                            <h2 class="dark:text-gray-300/75">{{ sub.name }}</h2>
                           </div>
                           <div v-if="sub.url">
-                            <Icon class="group-hover:text-black/50" name="fluent:window-new-24-regular" size="24" />
+                            <Icon class="group-hover:text-black/50 dark:group-hover:text-primary dark:text-gray-300/75" name="fluent:window-new-24-regular" size="24" />
                           </div>
                         </NuxtLink>
                       </div>
                     </div>
 
                     <p class="mt-2">
-                      <a class="hs-collapse-toggle inline-flex items-center gap-x-2" href="javascript:;" :id="'hs-show-hide-collapse' + indexo + 1" :data-hs-collapse="'#hs-show-hide-collapse-heading-' + indexo + 1">
+                      <a class="hs-collapse-toggle inline-flex items-center gap-x-2 dark:text-gray-300/75" href="javascript:;" :id="'hs-show-hide-collapse' + indexo + 1" :data-hs-collapse="'#hs-show-hide-collapse-heading-' + indexo + 1">
                         <span class="hs-collapse-open:hidden">Показать больше</span>
                         <span class="hs-collapse-open:block hidden">Показать меньше</span>
                         <svg class="hs-collapse-open:rotate-180 w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +100,7 @@
                       </a>
                     </p>
                     <div :id="'hs-show-hide-collapse-heading-' + indexo + 1" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" :aria-labelledby="'hs-show-hide-collapse' + indexo + 1">
-                      <div class="grid gap-4 divide-y">
+                      <div class="grid gap-4 divide-y dark:text-gray-300/75">
                         <div class="group pt-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/spotify.svg" alt="Spotify">Spotify</div>
                         </div>
