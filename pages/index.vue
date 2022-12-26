@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-4 pb-32">
+  <div class="pt-4 pb-40 md:pb-32">
 
     <main class="container flex flex-col md:flex-row gap-4 md:gap-10 lg:gap-12 xl:gap-16">
 
@@ -20,7 +20,7 @@
             <div class="hover:cursor-pointer relative group overflow-hidden rounded-lg dark:border dark:border-white/10" @click="selectSound(indexo)">
               <span class="opacity-0 group-hover:opacity-100 duration-150 absolute inset-0 bg-black/50"></span>
 
-              <NuxtImg provider="cloudinary" format="webp" sizes="sm:480px" quality="80" :src="audio.cover" :alt="audio.name" width="250" height="250" />
+              <NuxtImg class="w-full" provider="cloudinary" format="webp" sizes="sm:480px" quality="80" :src="audio.cover" :alt="audio.name" width="250" height="250" />
 
               <!-- NEW STATUS -->
               <span class="absolute top-3 right-3 bg-yellow-400 px-1.5 text-black rounded-full text-xs" v-if="audio.new">New</span>
@@ -34,16 +34,14 @@
 
             <div class="mt-2 grid gap-1">
               <div>
-                <h2 class="text-md md:text-lg font-bold dark:text-gray-300">{{audio.name}}</h2>
+                <div class="flex justify-between items-start md:items-center gap-2">
+                  <h2 class="md:text-lg font-bold dark:text-gray-300">{{audio.name}}</h2>
+
+                  <button class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" type="button" :data-hs-overlay="'#id-' + indexo + 1"><Icon name="lucide:shopping-bag" size="18"/></button>
+                </div>
                 <p class="text-xs md:text-sm text-gray-500 dark:text-gray-300/75">от {{audio.artist}}</p>
               </div>
               <p class="text-xs text-gray-500 dark:text-gray-300/75">Выпущено: {{audio.date}}</p>
-            </div>
-
-            <!-- <div>
-              <button type="button" class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800" :data-hs-overlay="'#id-' + indexo + 1">
-                Vertically centered modal
-              </button>
             </div>
 
             <div :id="'id-' + indexo + 1" class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
@@ -53,29 +51,98 @@
                     <h3 class="font-bold text-gray-800 dark:text-white">
                       Магазины
                     </h3>
-                    <button type="button" class="hs-dropdown-toggle inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-sm dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800" data-hs-overlay="#hs-vertically-centered-modal">
+                    <button type="button" class="hs-dropdown-toggle inline-flex flex-shrink-0 justify-center items-center h-8 w-8 rounded-md text-gray-500 hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition-all text-sm dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800" :data-hs-overlay="'#id-' + indexo + 1">
                       <span class="sr-only">Close</span>
                       <svg class="w-3.5 h-3.5" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.258206 1.00652C0.351976 0.912791 0.479126 0.860131 0.611706 0.860131C0.744296 0.860131 0.871447 0.912791 0.965207 1.00652L3.61171 3.65302L6.25822 1.00652C6.30432 0.958771 6.35952 0.920671 6.42052 0.894471C6.48152 0.868271 6.54712 0.854471 6.61352 0.853901C6.67992 0.853321 6.74572 0.865971 6.80722 0.891111C6.86862 0.916251 6.92442 0.953381 6.97142 1.00032C7.01832 1.04727 7.05552 1.1031 7.08062 1.16454C7.10572 1.22599 7.11842 1.29183 7.11782 1.35822C7.11722 1.42461 7.10342 1.49022 7.07722 1.55122C7.05102 1.61222 7.01292 1.6674 6.96522 1.71352L4.31871 4.36002L6.96522 7.00648C7.05632 7.10078 7.10672 7.22708 7.10552 7.35818C7.10442 7.48928 7.05182 7.61468 6.95912 7.70738C6.86642 7.80018 6.74102 7.85268 6.60992 7.85388C6.47882 7.85498 6.35252 7.80458 6.25822 7.71348L3.61171 5.06702L0.965207 7.71348C0.870907 7.80458 0.744606 7.85498 0.613506 7.85388C0.482406 7.85268 0.357007 7.80018 0.264297 7.70738C0.171597 7.61468 0.119017 7.48928 0.117877 7.35818C0.116737 7.22708 0.167126 7.10078 0.258206 7.00648L2.90471 4.36002L0.258206 1.71352C0.164476 1.61976 0.111816 1.4926 0.111816 1.36002C0.111816 1.22744 0.164476 1.10028 0.258206 1.00652Z" fill="currentColor"/>
                       </svg>
                     </button>
                   </div>
-                  <div class="p-4 overflow-y-auto">
-                    <p class="text-gray-800 dark:text-gray-400">
-                      This is a wider card with supporting text below as a natural lead-in to additional content.
+                  <div class="px-4 pt-4 pb-10 overflow-y-auto grid gap-4">
+                    <!-- COVER -->
+                    <div class="hover:cursor-pointer relative group overflow-hidden rounded-lg dark:border dark:border-white/10" @click="selectSound(indexo)">
+                      <span class="opacity-0 group-hover:opacity-100 duration-150 absolute inset-0 bg-black/50"></span>
+
+                      <NuxtImg provider="cloudinary" format="webp" sizes="sm:640px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
+
+                      <!-- NEW STATUS -->
+                      <span class="absolute top-3 right-3 bg-yellow-400 px-1.5 text-black rounded-full text-xs" v-if="audio.new">New</span>
+
+                      <!-- BUTTON PLAY -->
+                      <div class="absolute bottom-3 left-3">
+                        <Icon v-if="state.audioPlaying[indexo]" name="ic:outline-play-circle-filled" size="40" class="text-white" />
+                        <Icon v-else name="ic:outline-play-circle-filled" size="40" class="text-white opacity-0 group-hover:opacity-100 duration-150" />
+                      </div>
+                    </div>
+
+                    <h4 class="text-lg font-bold">Популярные</h4>
+                    <div class="grid gap-4 divide-y">
+                      <div class="group pt-4" v-for="(sub, index) in audio.sub" :key="index"> 
+                        <NuxtLink class="flex justify-between items-center" :to="sub.url" target="_blank">
+                          <div class="flex items-center gap-2">
+                            <img class="w-8 shadow-lg rounded-lg" :src="sub.icon" :alt="sub.name">
+                            {{ sub.name }}
+                          </div>
+                          <div v-if="sub.url">
+                            <Icon class="group-hover:text-black/50" name="fluent:window-new-24-regular" size="24" />
+                          </div>
+                        </NuxtLink>
+                      </div>
+                    </div>
+
+                    <p class="mt-2">
+                      <a class="hs-collapse-toggle inline-flex items-center gap-x-2" href="javascript:;" :id="'hs-show-hide-collapse' + indexo + 1" :data-hs-collapse="'#hs-show-hide-collapse-heading-' + indexo + 1">
+                        <span class="hs-collapse-open:hidden">Показать больше</span>
+                        <span class="hs-collapse-open:block hidden">Показать меньше</span>
+                        <svg class="hs-collapse-open:rotate-180 w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 5L8.16086 10.6869C8.35239 10.8637 8.64761 10.8637 8.83914 10.6869L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                      </a>
                     </p>
-                  </div>
-                  <div class="flex justify-end items-center gap-x-2 py-3 px-4 border-t dark:border-gray-700">
-                    <button type="button" class="hs-dropdown-toggle py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-overlay="#hs-vertically-centered-modal">
-                      Close
-                    </button>
-                    <a class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm dark:focus:ring-offset-gray-800" href="#">
-                      Save changes
-                    </a>
+                    <div :id="'hs-show-hide-collapse-heading-' + indexo + 1" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" :aria-labelledby="'hs-show-hide-collapse' + indexo + 1">
+                      <div class="grid gap-4 divide-y">
+                        <div class="group pt-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/spotify.svg" alt="Spotify">Spotify</div>
+                        </div>
+
+                        <div class="group pt-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/pandora.svg" alt="Pandora">Pandora</div>
+                        </div>
+
+                        <div class="group pt-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/iheartradio.svg" alt="IHeartRadio">IHeartRadio</div>
+                        </div>
+
+                        <div class="group pt-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/napster.svg" alt="Napster">Napster</div>
+                        </div>
+
+                        <div class="group pt-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/tencent.svg" alt="Tencent Music">Tencent Music</div>
+                        </div>
+
+                        <div class="group pt-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/snapchat.svg" alt="Snapchat">Snapchat</div>
+                        </div>
+
+                        <div class="group pt-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/7digital.svg" alt="7digital">7digital</div>
+                        </div>
+
+                        <div class="group pt-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/gaana.svg" alt="Gaana">Gaana</div>
+                        </div>
+
+                        <div class="group pt-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/joox.svg" alt="Joox">Joox</div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
 
           </div>
         </div>
@@ -90,7 +157,7 @@
           <div>
             <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo">
               <!-- COVER -->
-              <NuxtImg class="md:w-[280px] lg:w-[320px] xl:w-[380px] rounded-lg dark:border dark:border-white/10" provider="cloudinary" format="webp" sizes="sm:520px" quality="80" :src="audio.cover" :alt="audio.name" width="380" height="380" />
+              <NuxtImg class="w-full rounded-lg dark:border dark:border-white/10" provider="cloudinary" format="webp" sizes="sm:520px" quality="80" :src="audio.cover" :alt="audio.name" width="380" height="380" />
 
               <!-- TITLE -->
               <div class="mt-4">
@@ -128,10 +195,10 @@
               <p class="text-sm text-gray-600 dark:text-gray-300/75">PsySystem — это Российский лейбл звукозаписи, в основном выпускающий музыку в стиле пси-транс. Был основан в 2006 году, и является личным лейблом, где выпускаются только понравившиеся музыка, в основном это свои синглы и работы сторонних исполнителей, в большинстве своем в жанре «пси-транс».</p>
             </div>
 
-            <div class="flex items-center gap-4 text-xs dark:text-gray-300/75">
+            <div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-300/75">
               <a class="block" href="https://www.liveinternet.ru/click" target="_blank"><img src="https://counter.yadro.ru/logo?26.1" title="LiveInternet: показано число посетителей за сегодня" alt="" style="border:0" width="88" height="15"/></a>
 
-              <span>Версия: 1.2.2</span>
+              <span>Версия: 1.0.0 beta 4</span>
             </div>
           </div>
 
@@ -144,7 +211,7 @@
       MINI PLAYER
     -->
 
-    <div class="fixed bottom-0 inset-x-0 backdrop-blur-lg bg-white/75 dark:backdrop-blur-xl dark:bg-black/50">
+    <div class="miniPlayer fixed bottom-0 inset-x-0 backdrop-blur-lg bg-white/75 dark:backdrop-blur-xl dark:bg-black/50">
       <div class="container py-4 md:py-0 md:h-16 flex flex-col-reverse md:flex-row justify-between items-center gap-4">
 
         <div class="flex w-full md:w-auto items-center gap-4">
@@ -218,6 +285,8 @@ import Track21 from "/music/fun-at-noise.mp3";
 */
 
 import { Howl, Howler } from 'howler';
+import audiosData from '/data/audios.json'
+
 export default {
   mounted(){
     var sound = this.audios[this.index].howl;
@@ -232,195 +301,7 @@ export default {
         titleTemplate: '%s | PsySystem Records',
       })
 
-      const audios = ref([
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669392375/music/time-for-freedom.mp3",
-          name: "Time For Freedom",
-          artist: "TheFubon",
-          date: "25.11.2022",
-          cover: "/cover/time-for-freedom.png",
-          new: true,
-          howl: null,
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669737299/music/flying-phoenix.mp3",
-          name: "Flying Phoenix",
-          artist: "TheFubon",
-          date: "25.11.2022",
-          cover: "/cover/flying-pohenix.png",
-          new: true,
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454140/music/fun-at-noise.mp3",
-          name: "Fun At Noise",
-          artist: "TheFubon",
-          date: "11.11.2022",
-          cover: "/cover/fun-at-noise.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454139/music/soul-of-space.mp3",
-          name: "Soul of Space",
-          artist: "TheFubon",
-          date: "11.11.2022",
-          cover: "/cover/soul-of-space.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454185/music/quantum.mp3",
-          name: "Quantum",
-          artist: "TheFubon",
-          date: "24.09.2022",
-          cover: "/cover/quantum.jpg",
-          howl: null
-        },
-         {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454149/music/under-the-stars.mp3",
-          name: "Under The Stars",
-          artist: "TheFubon",
-          date: "24.09.2022",
-          cover: "/cover/under-the-stars.jpg",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454144/music/until.mp3",
-          name: "Until",
-          artist: "TheFubon",
-          date: "16.09.2022",
-          cover: "/cover/until.jpg",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454168/music/retrospective.mp3",
-          name: "Retrospective",
-          artist: "TheFubon",
-          date: "16.09.2022",
-          cover: "/cover/retrospective.jpg",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454171/music/deeper-house.mp3",
-          name: "Deeper House",
-          artist: "TheFubon",
-          date: "16.09.2022",
-          cover: "/cover/deeper-house.jpg",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454154/music/your-love.mp3",
-          name: "Your Love",
-          artist: "TheFubon",
-          date: "11.07.2022",
-          cover: "/cover/your-love.jpg",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454184/music/where-did-you-go.mp3",
-          name: "Where Did You Go",
-          artist: "TheFubon",
-          date: "08.07.2022",
-          cover: "/cover/where-did-you-go.jpg",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454199/music/feelings-of-youth.mp3",
-          name: "Feelings of Youth",
-          artist: "TheFubon",
-          date: "13.02.2021",
-          cover: "/cover/feelings-of-youth.jpg",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454189/music/sunset-extented-version.mp3",
-          name: "SunSet (Extended)",
-          artist: "TheFubon",
-          date: "09.02.2021",
-          cover: "/cover/sunset-extended-version.jpg",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454166/music/by-my-side.mp3",
-          name: "By My Side",
-          artist: "yagelProject",
-          date: "01.05.2020",
-          cover: "/cover/by-my-side.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454176/music/prey.mp3",
-          name: "Prey",
-          artist: "yagelProject",
-          date: "25.09.2019",
-          cover: "/cover/prey.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454196/music/sunset.mp3",
-          name: "SunSet",
-          artist: "yagelProject",
-          date: "23.08.2019",
-          cover: "/cover/sunset.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454148/music/atmosphere.mp3",
-          name: "Atmosphere",
-          artist: "yagelProject",
-          date: "16.08.2019",
-          cover: "/cover/atmosphere.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454122/music/big-tree.mp3",
-          name: "Big Tree",
-          artist: "yagelProject",
-          date: "12.08.2019",
-          cover: "/cover/big-tree.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454172/music/eximinds-trance.mp3",
-          name: "Eximinds Trance",
-          artist: "yagelProject",
-          date: "08.08.2019",
-          cover: "/cover/eximinds-trance.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454165/music/mama-ya-tancuyu.mp3",
-          name: "Мама, Я Танцую",
-          artist: "#2Маши & yagelProject",
-          date: "17.07.2019",
-          cover: "/cover/mama-ya-tancuyu.jpg",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454145/music/black-beach.mp3",
-          name: "Black Beach",
-          artist: "yagelProject",
-          date: "28.12.2019",
-          cover: "/cover/black-beach.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454147/music/tichaya-pravda.mp3",
-          name: "Тихая правда",
-          artist: "Перекати поле",
-          date: "20.07.2015",
-          cover: "/cover/tichaya-pravda.png",
-          howl: null
-        },
-        {
-          file: "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454205/music/teachers-preach.mp3",
-          name: "Teacher's Preach",
-          artist: "yagelProject",
-          date: "11.06.2013",
-          cover: "/cover/teachers-preach.png",
-          howl: null
-        },
-      ]);
-
+      const audios = ref(audiosData);
       const step =  ref(0);
       const nextButton = ref(true);
       const prevButton = ref(true);
@@ -648,5 +529,9 @@ export default {
 #progressButtonVolume {
   margin-top:-9px;
   right:-8px;
+}
+
+.miniPlayer {
+  padding-bottom: env(safe-area-inset-bottom,0);
 }
 </style>

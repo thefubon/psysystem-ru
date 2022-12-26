@@ -1,0 +1,307 @@
+[
+  
+  
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1672047348/music/sentimental-moods.mp3",
+    "name": "Sentimental Moods",
+    "artist": "TheFubon & Jazz Soul",
+    "date": "26.12.2022",
+    "cover": "/cover/sentimental-moods.png",
+    "new": true,
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669392375/music/time-for-freedom.mp3",
+    "name": "Time For Freedom",
+    "artist": "TheFubon",
+    "date": "25.11.2022",
+    "cover": "/cover/time-for-freedom.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": "https://music.yandex.ru/album/24213456/track/109374028"
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": "https://vk.com/audio-2001170340_116170340"
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": "https://zvuk.com/release/27749801"
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": "https://music.youtube.com/watch?v=4prQufD8l5I"
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": "https://youtu.be/4prQufD8l5I"
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": "https://www.shazam.com/track/644405326/time-for-freedom"
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": "https://amazon.com/music/player/albums/B0BNKRQ7QW?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_dChhjHWpmSHlN5vEj8rVfxQuK"
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": "https://deezer.page.link/wE7ohT9Bj6yWih4U6"
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": "https://music.163.com/#/song?id=2004061574"
+      }
+    ],
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669737299/music/flying-phoenix.mp3",
+    "name": "Flying Phoenix",
+    "artist": "TheFubon",
+    "date": "25.11.2022",
+    "cover": "/cover/flying-pohenix.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454140/music/fun-at-noise.mp3",
+    "name": "Fun At Noise",
+    "artist": "TheFubon",
+    "date": "11.11.2022",
+    "cover": "/cover/fun-at-noise.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454139/music/soul-of-space.mp3",
+    "name": "Soul of Space",
+    "artist": "TheFubon",
+    "date": "11.11.2022",
+    "cover": "/cover/soul-of-space.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454185/music/quantum.mp3",
+    "name": "Quantum",
+    "artist": "TheFubon",
+    "date": "24.09.2022",
+    "cover": "/cover/quantum.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454149/music/under-the-stars.mp3",
+    "name": "Under The Stars",
+    "artist": "TheFubon",
+    "date": "24.09.2022",
+    "cover": "/cover/under-the-stars.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454144/music/until.mp3",
+    "name": "Until",
+    "artist": "TheFubon",
+    "date": "16.09.2022",
+    "cover": "/cover/until.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454168/music/retrospective.mp3",
+    "name": "Retrospective",
+    "artist": "TheFubon",
+    "date": "16.09.2022",
+    "cover": "/cover/retrospective.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454171/music/deeper-house.mp3",
+    "name": "Deeper House",
+    "artist": "TheFubon",
+    "date": "16.09.2022",
+    "cover": "/cover/deeper-house.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454154/music/your-love.mp3",
+    "name": "Your Love",
+    "artist": "TheFubon",
+    "date": "11.07.2022",
+    "cover": "/cover/your-love.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454184/music/where-did-you-go.mp3",
+    "name": "Where Did You Go",
+    "artist": "TheFubon",
+    "date": "08.07.2022",
+    "cover": "/cover/where-did-you-go.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454199/music/feelings-of-youth.mp3",
+    "name": "Feelings of Youth",
+    "artist": "TheFubon",
+    "date": "13.02.2021",
+    "cover": "/cover/feelings-of-youth.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454189/music/sunset-extented-version.mp3",
+    "name": "SunSet (Extended)",
+    "artist": "TheFubon",
+    "date": "09.02.2021",
+    "cover": "/cover/sunset-extended-version.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454166/music/by-my-side.mp3",
+    "name": "By My Side",
+    "artist": "yagelProject",
+    "date": "01.05.2020",
+    "cover": "/cover/by-my-side.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454176/music/prey.mp3",
+    "name": "Prey",
+    "artist": "yagelProject",
+    "date": "25.09.2019",
+    "cover": "/cover/prey.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454196/music/sunset.mp3",
+    "name": "SunSet",
+    "artist": "yagelProject",
+    "date": "23.08.2019",
+    "cover": "/cover/sunset.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454148/music/atmosphere.mp3",
+    "name": "Atmosphere",
+    "artist": "yagelProject",
+    "date": "16.08.2019",
+    "cover": "/cover/atmosphere.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454122/music/big-tree.mp3",
+    "name": "Big Tree",
+    "artist": "yagelProject",
+    "date": "12.08.2019",
+    "cover": "/cover/big-tree.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454172/music/eximinds-trance.mp3",
+    "name": "Eximinds Trance",
+    "artist": "yagelProject",
+    "date": "08.08.2019",
+    "cover": "/cover/eximinds-trance.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454165/music/mama-ya-tancuyu.mp3",
+    "name": "Мама, Я Танцую",
+    "artist": "#2Маши & yagelProject",
+    "date": "17.07.2019",
+    "cover": "/cover/mama-ya-tancuyu.jpg",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454145/music/black-beach.mp3",
+    "name": "Black Beach",
+    "artist": "yagelProject",
+    "date": "28.12.2019",
+    "cover": "/cover/black-beach.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454147/music/tichaya-pravda.mp3",
+    "name": "Тихая правда",
+    "artist": "Перекати поле",
+    "date": "20.07.2015",
+    "cover": "/cover/tichaya-pravda.png",
+    "howl": null
+  },
+
+
+  {
+    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454205/music/teachers-preach.mp3",
+    "name": "Teacher's Preach",
+    "artist": "yagelProject",
+    "date": "11.06.2013",
+    "cover": "/cover/teachers-preach.png",
+    "howl": null
+  }
+
+  
+]
