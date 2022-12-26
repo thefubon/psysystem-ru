@@ -90,6 +90,68 @@
     "artist": "TheFubon",
     "date": "25.11.2022",
     "cover": "/cover/flying-pohenix.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": "https://music.yandex.ru/album/24225375/track/109412649"
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": "https://vk.com/audio-2001060549_116060549"
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": "https://zvuk.com/release/27766524"
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": "https://music.apple.com/ru/album/flying-phoenix-single/1657193404"
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": "https://music.youtube.com/watch?v=AFimzeccRlM"
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": "https://youtu.be/AFimzeccRlM"
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": "https://www.shazam.com/track/644046953/flying-phoenix"
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": "https://amazon.com/music/player/albums/B0BNN7LGXD?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_DTbldfWFLioxNqdgu4y71A0St"
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": "https://deezer.page.link/VBCw3zFTX2bHSyDy8"
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": "https://music.163.com/#/song?id=2003441016"
+      }
+    ],
     "howl": null
   },
 
@@ -100,6 +162,62 @@
     "artist": "TheFubon",
     "date": "11.11.2022",
     "cover": "/cover/fun-at-noise.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": "https://music.yandex.ru/album/24072909/track/108871262"
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": "https://vk.com/audio-2001449623_115449623"
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": "https://zvuk.com/release/27596324"
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": "https://music.apple.com/ru/album/fun-at-noise-single/1654474427"
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": "https://music.youtube.com/watch?v=MMETthlNOAM"
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": "https://youtu.be/MMETthlNOAM"
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": "https://amazon.com/music/player/albums/B0BMFNM6CW?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_69RCZseA5EEFUrckX0XPY9yFg"
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": "https://deezer.page.link/QzqMaqryqm8yyWWC7"
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": "https://music.163.com/#/song?id=2000331543"
+      }
+    ],
     "howl": null
   },
 
@@ -110,6 +228,68 @@
     "artist": "TheFubon",
     "date": "11.11.2022",
     "cover": "/cover/soul-of-space.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": "https://music.yandex.ru/album/24077403/track/108881432"
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": "https://vk.com/audio-2001459700_115459700"
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": "https://zvuk.com/release/27599748"
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": "https://music.apple.com/ru/album/soul-of-space-single/1654592461"
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": "https://music.youtube.com/watch?v=XJdSb1tjKv8"
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": "https://youtu.be/XJdSb1tjKv8"
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": "https://www.shazam.com/ru/track/641845037/soul-of-space"
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": "https://amazon.com/music/player/albums/B0BMFPZMZH?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_bhJ6x0mDWTGUv05Tp9LTuTazz&trackAsin=B0BMFP8YKG"
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": "https://deezer.page.link/ytPFQVVSWSxAKybK7"
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": "https://music.163.com/#/song?id=1999812025"
+      }
+    ],
     "howl": null
   },
 
@@ -120,6 +300,68 @@
     "artist": "TheFubon",
     "date": "24.09.2022",
     "cover": "/cover/quantum.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": "https://music.yandex.ru/album/23631931/track/107623598"
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": "https://vk.com/audio-2001267659_113267659"
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": "https://zvuk.com/release/26535407"
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": "https://music.apple.com/ru/album/quantum-single/1646981212"
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": "https://music.youtube.com/watch?v=c0L-9LBhABI"
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": "https://youtu.be/c0L-9LBhABI"
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": "https://www.shazam.com/ru/track/634458587/quantum"
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": "https://amazon.com/music/player/albums/B0BGJM5WPZ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Q6pfunCCa3I9yg3iYSz6yHuU3&trackAsin=B0BGJKNHNV"
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": "https://deezer.page.link/7utiPhSrREsAK2RV9"
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": "https://music.163.com/#/song?id=1986551124"
+      }
+    ],
     "howl": null
   },
 

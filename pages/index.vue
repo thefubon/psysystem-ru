@@ -37,7 +37,7 @@
                 <div class="flex justify-between items-start md:items-center gap-2">
                   <h2 class="md:text-lg font-bold dark:text-gray-300">{{audio.name}}</h2>
 
-                  <button class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" type="button" :data-hs-overlay="'#id-' + indexo + 1"><Icon name="lucide:shopping-bag" size="18"/></button>
+                  <button class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" type="button" :data-hs-overlay="'#id-' + indexo + 1"><Icon name="lucide:shopping-bag" size="20"/></button>
                 </div>
                 <p class="text-xs md:text-sm text-gray-500 dark:text-gray-300/75">от {{audio.artist}}</p>
               </div>
@@ -46,8 +46,8 @@
 
             <div :id="'id-' + indexo + 1" class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
               <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
-                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">
-                  <div class="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
+                <div class="flex flex-col bg-white rounded-xl dark:backdrop-blur-xl dark:bg-black/50">
+                  <div class="flex justify-between items-center py-3 px-4">
                     <h3 class="font-bold text-gray-800 dark:text-white">
                       Магазины
                     </h3>
@@ -75,8 +75,7 @@
                       </div>
                     </div>
 
-                    <h4 class="text-lg font-bold dark:text-gray-300/75">Популярные</h4>
-                    <div class="grid gap-4 divide-y">
+                    <div class="grid gap-4 divide-y dark:divide-white/10">
                       <div class="group pt-4" v-for="(sub, index) in audio.sub" :key="index"> 
                         <NuxtLink class="flex justify-between items-center" :to="sub.url" target="_blank">
                           <div class="flex items-center gap-2">
@@ -100,7 +99,7 @@
                       </a>
                     </p>
                     <div :id="'hs-show-hide-collapse-heading-' + indexo + 1" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" :aria-labelledby="'hs-show-hide-collapse' + indexo + 1">
-                      <div class="grid gap-4 divide-y dark:text-gray-300/75">
+                      <div class="grid gap-4 divide-y dark:divide-white/10 dark:text-gray-300/75">
                         <div class="group pt-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/spotify.svg" alt="Spotify">Spotify</div>
                         </div>
@@ -533,5 +532,9 @@ export default {
 
 .miniPlayer {
   padding-bottom: env(safe-area-inset-bottom,0);
+}
+
+.hs-overlay.open {
+  @apply !bg-black/75 dark:!bg-black/50;
 }
 </style>
