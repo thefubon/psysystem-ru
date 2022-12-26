@@ -46,7 +46,7 @@
 
             <div :id="'id-' + indexo + 1" class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
               <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto min-h-[calc(100%-3.5rem)] flex items-center">
-                <div class="flex flex-col bg-white rounded-xl dark:backdrop-blur-xl dark:bg-black/50">
+                <div class="flex flex-col bg-white rounded-xl dark:bg-black/30">
                   <div class="flex justify-between items-center py-3 px-4">
                     <h3 class="font-bold text-gray-800 dark:text-white">
                       Магазины
@@ -75,7 +75,7 @@
                       </div>
                     </div>
 
-                    <div class="grid gap-4 divide-y dark:divide-white/10">
+                    <div class="grid gap-4 divide-y divide-gray-300/40 dark:divide-white/5">
                       <div class="group pt-4" v-for="(sub, index) in audio.sub" :key="index"> 
                         <NuxtLink class="flex justify-between items-center" :to="sub.url" target="_blank">
                           <div class="flex items-center gap-2">
@@ -99,7 +99,7 @@
                       </a>
                     </p>
                     <div :id="'hs-show-hide-collapse-heading-' + indexo + 1" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" :aria-labelledby="'hs-show-hide-collapse' + indexo + 1">
-                      <div class="grid gap-4 divide-y dark:divide-white/10 dark:text-gray-300/75">
+                      <div class="grid gap-4 divide-y divide-gray-300/40 dark:divide-white/5 dark:text-gray-300/75">
                         <div class="group pt-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/spotify.svg" alt="Spotify">Spotify</div>
                         </div>
@@ -535,6 +535,6 @@ export default {
 }
 
 .hs-overlay.open {
-  @apply !bg-black/75 dark:!bg-black/50;
+  @apply dark:backdrop-blur-lg dark:bg-black/30 bg-black/50;
 }
 </style>
