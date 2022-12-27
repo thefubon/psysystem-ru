@@ -99,11 +99,10 @@
                       </a>
                     </p>
                     <div :id="'hs-show-hide-collapse-heading-' + indexo + 1" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" :aria-labelledby="'hs-show-hide-collapse' + indexo + 1">
-                      <div class="grid gap-4 divide-y divide-gray-300/40 dark:divide-white/5 dark:text-gray-300/75">
-                        <div class="group pt-4"> 
-                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/spotify.svg" alt="Spotify">Spotify</div>
-                        </div>
 
+                      <p class="p-2 border border-gray-200 dark:border-gray-200/10 rounded text-xs text-gray-500">Сервисы без прямой ссылки являются приложениями, радиостанциями или доступные только в определенных странах.</p>
+
+                      <div class="grid gap-4 divide-y divide-gray-300/40 dark:divide-white/5 dark:text-gray-300/75">
                         <div class="group pt-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/pandora.svg" alt="Pandora">Pandora</div>
                         </div>

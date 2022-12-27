@@ -78,6 +78,12 @@
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
         "url": "https://music.163.com/#/song?id=2004061574"
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/0vfiQwz17dwVjS1Z3qL5cL"
       }
     ],
     "howl": null
@@ -150,6 +156,12 @@
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
         "url": "https://music.163.com/#/song?id=2003441016"
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/2gse6W0XGcfoTKw1ImJISm"
       }
     ],
     "howl": null
@@ -216,6 +228,12 @@
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
         "url": "https://music.163.com/#/song?id=2000331543"
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/2T3umeHTaUXZcQ3A7HtQSG"
       }
     ],
     "howl": null
@@ -288,6 +306,12 @@
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
         "url": "https://music.163.com/#/song?id=1999812025"
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/7HTasMT1IeDtb1Y63W9u1R"
       }
     ],
     "howl": null
@@ -360,6 +384,12 @@
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
         "url": "https://music.163.com/#/song?id=1986551124"
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/3RXpt7dd38A0yZwYx0ZokV"
       }
     ],
     "howl": null
@@ -372,6 +402,74 @@
     "artist": "TheFubon",
     "date": "24.09.2022",
     "cover": "/cover/under-the-stars.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": "https://music.yandex.ru/album/23631945/track/107623617"
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": "https://vk.com/audio-2001267860_113267860"
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": "https://zvuk.com/track/124135285"
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": "https://music.apple.com/ru/album/under-the-stars/1646981776?i=1646981784"
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": "https://music.youtube.com/watch?v=ykhMFVzOzA0"
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": "https://youtu.be/ykhMFVzOzA0"
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": "https://www.shazam.com/track/634459209/under-the-stars"
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": "https://amazon.com/music/player/albums/B0BGJG571J?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_PRHUzAcai4bKYKUPmr39YS55Z"
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": "https://deezer.page.link/uQzWXzzoxu7us8HLA"
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": "https://music.163.com/#/song?id=1985614797"
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/3iNQBq1xMONs4UHOgBVPPm"
+      }
+    ],
     "howl": null
   },
 
@@ -382,6 +480,74 @@
     "artist": "TheFubon",
     "date": "16.09.2022",
     "cover": "/cover/until.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": "https://music.yandex.ru/album/23561513/track/107426609"
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": "https://vk.com/audio-2001976540_112976540"
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": "https://zvuk.com/track/123657872"
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": "https://music.apple.com/ru/album/until/1645694465?i=1645694467"
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": "https://music.youtube.com/watch?v=PWBw0TRKKyU"
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": "https://youtu.be/PWBw0TRKKyU"
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": "https://www.shazam.com/ru/track/633273099/until"
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": "https://amazon.com/music/player/albums/B0BFLYF1CD?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_j4ntSos7hubFWaEhgYbxa05kA"
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": "https://deezer.page.link/4j1qSUhibkbfD2M27"
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": "https://music.163.com/#/song?id=1982312208"
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/09Iwr9TNiKGTGNw9IpizA3"
+      }
+    ],
     "howl": null
   },
 
@@ -392,6 +558,74 @@
     "artist": "TheFubon",
     "date": "16.09.2022",
     "cover": "/cover/retrospective.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/11MyWHfDWuISR2IY31LP7F"
+      }
+    ],
     "howl": null
   },
 
@@ -402,6 +636,74 @@
     "artist": "TheFubon",
     "date": "16.09.2022",
     "cover": "/cover/deeper-house.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/5Joc4tEuZfAXbRmDVxRuqH"
+      }
+    ],
     "howl": null
   },
 
@@ -412,6 +714,74 @@
     "artist": "TheFubon",
     "date": "11.07.2022",
     "cover": "/cover/your-love.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/2LaezWvmMtL5z6e4Hl8EHi"
+      }
+    ],
     "howl": null
   },
 
@@ -422,6 +792,74 @@
     "artist": "TheFubon",
     "date": "08.07.2022",
     "cover": "/cover/where-did-you-go.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/1nmnl56YIQpjaaFvBeq8r6"
+      }
+    ],
     "howl": null
   },
 
@@ -432,6 +870,74 @@
     "artist": "TheFubon",
     "date": "13.02.2021",
     "cover": "/cover/feelings-of-youth.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/03yalsY2ZcGJQw6eFifQZY"
+      }
+    ],
     "howl": null
   },
 
@@ -442,6 +948,74 @@
     "artist": "TheFubon",
     "date": "09.02.2021",
     "cover": "/cover/sunset-extended-version.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/1v6YgfKan5iJ2KLqWsOX7V"
+      }
+    ],
     "howl": null
   },
 
@@ -452,6 +1026,74 @@
     "artist": "yagelProject",
     "date": "01.05.2020",
     "cover": "/cover/by-my-side.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/322IL3TECm6176YYvlgjC3"
+      }
+    ],
     "howl": null
   },
 
@@ -462,6 +1104,74 @@
     "artist": "yagelProject",
     "date": "25.09.2019",
     "cover": "/cover/prey.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/2kgi415eYTkz4udU6qWzPv"
+      }
+    ],
     "howl": null
   },
 
@@ -472,6 +1182,74 @@
     "artist": "yagelProject",
     "date": "23.08.2019",
     "cover": "/cover/sunset.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/0UcQzMqbg5mz4rEZfEaSmh"
+      }
+    ],
     "howl": null
   },
 
@@ -482,6 +1260,74 @@
     "artist": "yagelProject",
     "date": "16.08.2019",
     "cover": "/cover/atmosphere.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/4ETsGc8XHcPtGdmtX3sgB7"
+      }
+    ],
     "howl": null
   },
 
@@ -492,6 +1338,74 @@
     "artist": "yagelProject",
     "date": "12.08.2019",
     "cover": "/cover/big-tree.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/2AW3AwSMfVVxvm1Dab2rkr"
+      }
+    ],
     "howl": null
   },
 
@@ -502,6 +1416,74 @@
     "artist": "yagelProject",
     "date": "08.08.2019",
     "cover": "/cover/eximinds-trance.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/3AIUp3dhgtAYdsUkM9hv54"
+      }
+    ],
     "howl": null
   },
 
@@ -512,6 +1494,74 @@
     "artist": "#2Маши & yagelProject",
     "date": "17.07.2019",
     "cover": "/cover/mama-ya-tancuyu.jpg",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/1rblfeX4tKpRKgmPv3nw54"
+      }
+    ],
     "howl": null
   },
 
@@ -522,6 +1572,74 @@
     "artist": "yagelProject",
     "date": "28.12.2019",
     "cover": "/cover/black-beach.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": ""
+      }
+    ],
     "howl": null
   },
 
@@ -532,6 +1650,74 @@
     "artist": "Перекати поле",
     "date": "20.07.2015",
     "cover": "/cover/tichaya-pravda.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": ""
+      }
+    ],
     "howl": null
   },
 
@@ -542,6 +1728,74 @@
     "artist": "yagelProject",
     "date": "11.06.2013",
     "cover": "/cover/teachers-preach.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": "https://open.spotify.com/album/4S2Pyo5ArTC4fxvdUTgnBQ"
+      }
+    ],
     "howl": null
   }
 
