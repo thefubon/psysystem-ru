@@ -75,12 +75,12 @@
                       </div>
                     </div>
 
-                    <div class="grid gap-4 divide-y divide-gray-300/40 dark:divide-white/5">
-                      <div class="group pt-4" v-for="(sub, index) in audio.sub" :key="index"> 
-                        <NuxtLink class="flex justify-between items-center" :to="sub.url" target="_blank">
+                    <div class="grid">
+                      <div class="group last:border-b-0 border-b border-gray-300/40 dark:border-white/5" v-for="(sub, index) in audio.sub" :key="index"> 
+                        <NuxtLink class="flex justify-between items-center py-4" :to="sub.url" target="_blank">
                           <div class="flex items-center gap-2">
                             <img class="w-8 shadow-lg rounded-lg" :src="sub.icon" :alt="sub.name">
-                            <h2 class="dark:text-gray-300/75">{{ sub.name }}</h2>
+                            <h2 class="dark:text-gray-300/75 relative left-0 group-hover:left-2 duration-150">{{ sub.name }}</h2>
                           </div>
                           <div v-if="sub.url">
                             <Icon class="group-hover:text-black/50 dark:group-hover:text-primary dark:text-gray-300/75" name="fluent:window-new-24-regular" size="24" />
@@ -98,42 +98,68 @@
                         </svg>
                       </a>
                     </p>
-                    <div :id="'hs-show-hide-collapse-heading-' + indexo + 1" class="hs-collapse hidden w-full overflow-hidden transition-[height] duration-300" :aria-labelledby="'hs-show-hide-collapse' + indexo + 1">
+                    <div :id="'hs-show-hide-collapse-heading-' + indexo + 1" class="hs-collapse hidden w-full transition-[height] duration-300" :aria-labelledby="'hs-show-hide-collapse' + indexo + 1">
 
                       <p class="p-2 border border-gray-200 dark:border-gray-200/10 rounded text-xs text-gray-500">Сервисы без прямой ссылки являются приложениями, радиостанциями или доступные только в определенных странах.</p>
 
-                      <div class="grid gap-4 divide-y divide-gray-300/40 dark:divide-white/5 dark:text-gray-300/75">
-                        <div class="group pt-4"> 
+                      <div class="grid dark:text-gray-300/75">
+                        <div class="py-4 border-b border-gray-300/40 dark:border-white/5"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/pandora.svg" alt="Pandora">Pandora</div>
                         </div>
 
-                        <div class="group pt-4"> 
+                        <div class="py-4 border-b border-gray-300/40 dark:border-white/5"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/iheartradio.svg" alt="IHeartRadio">IHeartRadio</div>
                         </div>
 
-                        <div class="group pt-4"> 
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/napster.svg" alt="Napster">Napster</div>
                         </div>
 
-                        <div class="group pt-4"> 
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/tencent.svg" alt="Tencent Music">Tencent Music</div>
                         </div>
 
-                        <div class="group pt-4"> 
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/snapchat.svg" alt="Snapchat">Snapchat</div>
                         </div>
 
-                        <div class="group pt-4"> 
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/7digital.svg" alt="7digital">7digital</div>
                         </div>
 
-                        <div class="group pt-4"> 
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/gaana.svg" alt="Gaana">Gaana</div>
                         </div>
 
-                        <div class="group pt-4"> 
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/joox.svg" alt="Joox">Joox</div>
                         </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/ayoba.svg" alt="Ayoba">Ayoba</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/gracenote.svg" alt="Gracenote">Gracenote</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/Anghami.svg" alt="Anghami">Anghami</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/Hungama.svg" alt="Hungama">Hungama</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/Wynk-Music.svg" alt="Wynk Music">Wynk Music</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/KKBox.svg" alt="KKBox">KKBox</div>
+                        </div>
+
+                        
                       </div>
                     </div>
 
