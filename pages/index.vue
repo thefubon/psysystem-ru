@@ -159,7 +159,57 @@
                           <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/KKBox.svg" alt="KKBox">KKBox</div>
                         </div>
 
-                        
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/JioSaavn.svg" alt="JioSaavn">JioSaavn</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/Kuack-Media-Group.svg" alt="Kuack Media Group">Kuack Media Group</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/Douyin.svg" alt="Douyin">Douyin</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/MediaNet.svg" alt="MediaNet">MediaNet</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/Boomplay.svg" alt="Boomplay">Boomplay</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/tim-music.svg" alt="TimMusic">TimMusic</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/Claromusica.svg" alt="Claromúsica">Claromúsica</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/peloton-musique.svg" alt="Peloton Musique">Peloton Musique</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/Qobuz.svg" alt="Qobuz">Qobuz</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/ZedPlus.svg" alt="Zed+">Zed+</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/TouchTunes.svg" alt="TouchTunes">TouchTunes</div>
+                        </div>
+
+                        <div class="border-b border-gray-300/40 dark:border-white/5 py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/Tidal.svg" alt="Tidal">Tidal</div>
+                        </div>
+
+                        <div class="py-4"> 
+                          <div class="flex items-center gap-2"><img class="w-8 shadow-lg rounded-lg" src="/img/store/VerveLife.svg" alt="VerveLife">VerveLife</div>
+                        </div>
                       </div>
                     </div>
 

@@ -75,6 +75,12 @@
       },
 
       {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/sang/280240193"
+      },
+
+      {
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
         "url": "https://music.163.com/#/song?id=2004061574"
@@ -147,6 +153,12 @@
       },
 
       {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/280326528"
+      },
+
+      {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
         "url": "https://deezer.page.link/VBCw3zFTX2bHSyDy8"
@@ -216,6 +228,12 @@
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
         "url": "https://amazon.com/music/player/albums/B0BMFNM6CW?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_69RCZseA5EEFUrckX0XPY9yFg"
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/279100039"
       },
 
       {
@@ -297,6 +315,12 @@
       },
 
       {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/279149008"
+      },
+
+      {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
         "url": "https://deezer.page.link/ytPFQVVSWSxAKybK7"
@@ -372,6 +396,12 @@
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
         "url": "https://amazon.com/music/player/albums/B0BGJM5WPZ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Q6pfunCCa3I9yg3iYSz6yHuU3&trackAsin=B0BGJKNHNV"
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/274582960"
       },
 
       {
@@ -453,6 +483,12 @@
       },
 
       {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/274582925"
+      },
+
+      {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
         "url": "https://deezer.page.link/uQzWXzzoxu7us8HLA"
@@ -531,6 +567,12 @@
       },
 
       {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/273751334"
+      },
+
+      {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
         "url": "https://deezer.page.link/4j1qSUhibkbfD2M27"
@@ -562,62 +604,68 @@
       {
         "name": "Яндекс Музыка",
         "icon": "/img/store/yandex-music.svg",
-        "url": ""
+        "url": "https://music.yandex.ru/album/23562626/track/107428784"
       },
 
       {
         "name": "VK Музыка",
         "icon": "/img/store/vk-music.svg",
-        "url": ""
+        "url": "https://vk.com/audio-2001991369_112991369"
       },
 
 
       {
         "name": "Звук",
         "icon": "/img/store/zvuk.svg",
-        "url": ""
+        "url": "https://zvuk.com/track/123660397"
       },
 
       {
         "name": "Apple Music / iTunes",
         "icon": "/img/store/apple-music.svg",
-        "url": ""
+        "url": "https://music.apple.com/ru/album/retrospective-single/1645717818"
       },
 
       {
         "name": "YouTube Music",
         "icon": "/img/store/youtube-music.svg",
-        "url": ""
+        "url": "https://music.youtube.com/watch?v=4M9hGI-Qrd0"
       },
 
       {
         "name": "YouTube",
         "icon": "/img/store/youtube.svg",
-        "url": ""
+        "url": "https://youtu.be/4M9hGI-Qrd0"
       },
 
       {
         "name": "Shazam",
         "icon": "/img/store/Shazam.svg",
-        "url": ""
+        "url": "https://www.shazam.com/track/633292025/retrospective"
       },
 
       {
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
-        "url": ""
+        "url": "https://amazon.com/music/player/albums/B0BFM7SZHS?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_fkYAMuftOAlU6jNid7MmHQiM0&trackAsin=B0BFMCJB7C"
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/273774364"
       },
 
       {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
-        "url": ""
+        "url": "https://deezer.page.link/rAxAEwXzUcCMB13o9"
       },
 
       {
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
-        "url": ""
+        "url": "https://music.163.com/#/song?id=1982362424"
       },
 
       {
@@ -640,62 +688,68 @@
       {
         "name": "Яндекс Музыка",
         "icon": "/img/store/yandex-music.svg",
-        "url": ""
+        "url": "https://music.yandex.ru/album/23051161/track/106035878"
       },
 
       {
         "name": "VK Музыка",
         "icon": "/img/store/vk-music.svg",
-        "url": ""
+        "url": "https://vk.com/audio-2001757464_110757464"
       },
 
 
       {
         "name": "Звук",
         "icon": "/img/store/zvuk.svg",
-        "url": ""
+        "url": "https://zvuk.com/track/121735533"
       },
 
       {
         "name": "Apple Music / iTunes",
         "icon": "/img/store/apple-music.svg",
-        "url": ""
+        "url": "https://music.apple.com/ru/album/deeper-house-single/1635011805"
       },
 
       {
         "name": "YouTube Music",
         "icon": "/img/store/youtube-music.svg",
-        "url": ""
+        "url": "https://music.youtube.com/watch?v=7POPN7BD5MI"
       },
 
       {
         "name": "YouTube",
         "icon": "/img/store/youtube.svg",
-        "url": ""
+        "url": "https://youtu.be/7POPN7BD5MI"
       },
 
       {
         "name": "Shazam",
         "icon": "/img/store/Shazam.svg",
-        "url": ""
+        "url": "https://www.shazam.com/ru/track/623986533/deeper-house"
       },
 
       {
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
-        "url": ""
+        "url": "https://amazon.com/music/player/albums/B0B6SDXWQB?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_hPDC1oe15YJ2gRSiSyEZj8MPJ"
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/268788518"
       },
 
       {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
-        "url": ""
+        "url": "https://deezer.page.link/jNecd5d97enzeP7Q8"
       },
 
       {
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
-        "url": ""
+        "url": "https://music.163.com/#/song?id=1964844604"
       },
 
       {
@@ -718,62 +772,68 @@
       {
         "name": "Яндекс Музыка",
         "icon": "/img/store/yandex-music.svg",
-        "url": ""
+        "url": "https://music.yandex.ru/album/22966507/track/105813119"
       },
 
       {
         "name": "VK Музыка",
         "icon": "/img/store/vk-music.svg",
-        "url": ""
+        "url": "https://vk.com/audio-2001580340_110580340"
       },
 
 
       {
         "name": "Звук",
         "icon": "/img/store/zvuk.svg",
-        "url": ""
+        "url": "https://zvuk.com/track/121700012"
       },
 
       {
         "name": "Apple Music / iTunes",
         "icon": "/img/store/apple-music.svg",
-        "url": ""
+        "url": "https://music.apple.com/ru/album/your-love/1634168923?i=1634168925"
       },
 
       {
         "name": "YouTube Music",
         "icon": "/img/store/youtube-music.svg",
-        "url": ""
+        "url": "https://music.youtube.com/watch?v=GC4IiPY37wo"
       },
 
       {
         "name": "YouTube",
         "icon": "/img/store/youtube.svg",
-        "url": ""
+        "url": "https://youtu.be/GC4IiPY37wo"
       },
 
       {
         "name": "Shazam",
         "icon": "/img/store/Shazam.svg",
-        "url": ""
+        "url": "https://www.shazam.com/ru/track/623339303/your-love"
       },
 
       {
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
-        "url": ""
+        "url": "https://amazon.com/music/player/albums/B0B6C72D3Q?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_a3YB8tIB6mLU1PFC2MSo5fbYL"
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/268458529"
       },
 
       {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
-        "url": ""
+        "url": "https://deezer.page.link/voLiYpPBU42Nyh689"
       },
 
       {
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
-        "url": ""
+        "url": "https://music.163.com/#/song?id=1963581329"
       },
 
       {
@@ -796,62 +856,68 @@
       {
         "name": "Яндекс Музыка",
         "icon": "/img/store/yandex-music.svg",
-        "url": ""
+        "url": "https://music.yandex.ru/album/22950043/track/105771911"
       },
 
       {
         "name": "VK Музыка",
         "icon": "/img/store/vk-music.svg",
-        "url": ""
+        "url": "https://vk.com/audio-2001431796_110431796"
       },
 
 
       {
         "name": "Звук",
         "icon": "/img/store/zvuk.svg",
-        "url": ""
+        "url": "https://zvuk.com/track/121600908"
       },
 
       {
         "name": "Apple Music / iTunes",
         "icon": "/img/store/apple-music.svg",
-        "url": ""
+        "url": "https://music.apple.com/ru/album/where-did-you-go/1633773283?i=1633773284"
       },
 
       {
         "name": "YouTube Music",
         "icon": "/img/store/youtube-music.svg",
-        "url": ""
+        "url": "https://music.youtube.com/watch?v=FwvKq-8Z75Y"
       },
 
       {
         "name": "YouTube",
         "icon": "/img/store/youtube.svg",
-        "url": ""
+        "url": "https://youtu.be/FwvKq-8Z75Y"
       },
 
       {
         "name": "Shazam",
         "icon": "/img/store/Shazam.svg",
-        "url": ""
+        "url": "https://www.shazam.com/ru/track/622977221/where-did-you-go"
       },
 
       {
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
-        "url": ""
+        "url": "https://amazon.com/music/player/albums/B0B6581G19?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_k8mIxsShAtgmIl9DNniVqz6Jx"
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/268252460"
       },
 
       {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
-        "url": ""
+        "url": "https://deezer.page.link/9JWBh2P9e2EMbiXq7"
       },
 
       {
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
-        "url": ""
+        "url": "https://music.163.com/#/song?id=1962619753"
       },
 
       {
@@ -874,62 +940,68 @@
       {
         "name": "Яндекс Музыка",
         "icon": "/img/store/yandex-music.svg",
-        "url": ""
+        "url": "https://music.yandex.ru/album/13916588/track/78075950"
       },
 
       {
         "name": "VK Музыка",
         "icon": "/img/store/vk-music.svg",
-        "url": ""
+        "url": "https://vk.com/audio-2001909913_83909913"
       },
 
 
       {
         "name": "Звук",
         "icon": "/img/store/zvuk.svg",
-        "url": ""
+        "url": "https://zvuk.com/track/83074202"
       },
 
       {
         "name": "Apple Music / iTunes",
         "icon": "/img/store/apple-music.svg",
-        "url": ""
+        "url": "https://music.apple.com/ru/album/feelings-of-youth/1553897684?i=1553897686"
       },
 
       {
         "name": "YouTube Music",
         "icon": "/img/store/youtube-music.svg",
-        "url": ""
+        "url": "https://music.youtube.com/watch?v=bJKxImsB3L4"
       },
 
       {
         "name": "YouTube",
         "icon": "/img/store/youtube.svg",
-        "url": ""
+        "url": "https://youtu.be/bJKxImsB3L4"
       },
 
       {
         "name": "Shazam",
         "icon": "/img/store/Shazam.svg",
-        "url": ""
+        "url": "https://www.shazam.com/track/558150602/feelings-of-youth"
       },
 
       {
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
-        "url": ""
+        "url": "https://amazon.com/music/player/albums/B08WPVK8QN?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_SmsiZxGXbUgyGKc0A8sfpI7CR"
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/238134885"
       },
 
       {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
-        "url": ""
+        "url": "https://deezer.page.link/Hb4waNdHeAy8NAis5"
       },
 
       {
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
-        "url": ""
+        "url": "https://music.163.com/#/song?id=1820814254"
       },
 
       {
@@ -952,62 +1024,68 @@
       {
         "name": "Яндекс Музыка",
         "icon": "/img/store/yandex-music.svg",
-        "url": ""
+        "url": "https://music.yandex.ru/album/13873960/track/77927830"
       },
 
       {
         "name": "VK Музыка",
         "icon": "/img/store/vk-music.svg",
-        "url": ""
+        "url": "https://vk.com/audio-2001715280_83715280"
       },
 
 
       {
         "name": "Звук",
         "icon": "/img/store/zvuk.svg",
-        "url": ""
+        "url": "https://zvuk.com/track/83073460"
       },
 
       {
         "name": "Apple Music / iTunes",
         "icon": "/img/store/apple-music.svg",
-        "url": ""
+        "url": "https://music.apple.com/ru/album/sunset-extended-version-feat-lightworks-marco-s/1553441922?i=1553441932"
       },
 
       {
         "name": "YouTube Music",
         "icon": "/img/store/youtube-music.svg",
-        "url": ""
+        "url": "https://music.youtube.com/watch?v=Du9jkAtTbxw"
       },
 
       {
         "name": "YouTube",
         "icon": "/img/store/youtube.svg",
-        "url": ""
+        "url": "https://youtu.be/Du9jkAtTbxw"
       },
 
       {
         "name": "Shazam",
         "icon": "/img/store/Shazam.svg",
-        "url": ""
+        "url": "https://www.shazam.com/ru/track/557686745/sunset-extended-version-feat-lightworks-marco-s"
       },
 
       {
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
-        "url": ""
+        "url": "https://amazon.com/music/player/albums/B08WJ8TXVP?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_EK5JGeJGNCdtcexypw9ljy7rZ"
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/237844917"
       },
 
       {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
-        "url": ""
+        "url": "https://deezer.page.link/kKfRo4uBh79Q4zP7A"
       },
 
       {
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
-        "url": ""
+        "url": "https://music.163.com/#/song?id=1819939849 "
       },
 
       {
@@ -1077,6 +1155,12 @@
       },
 
       {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": ""
+      },
+
+      {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
         "url": ""
@@ -1085,7 +1169,7 @@
       {
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
-        "url": ""
+        "url": "https://musik.yousee.dk/sang/224259609"
       },
 
       {
@@ -1623,6 +1707,12 @@
       },
 
       {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/220809600"
+      },
+
+      {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
         "url": ""
@@ -1701,6 +1791,12 @@
       },
 
       {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/sang/220686624"
+      },
+
+      {
         "name": "Deezer",
         "icon": "/img/store/deezer.svg",
         "url": ""
@@ -1776,6 +1872,12 @@
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
         "url": ""
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": "https://musik.yousee.dk/album/219085230"
       },
 
       {
