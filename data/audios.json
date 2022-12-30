@@ -7,6 +7,79 @@
     "artist": "TheFubon & Jazz Soul",
     "date": "26.12.2022",
     "cover": "/cover/sentimental-moods.png",
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": "https://music.apple.com/ru/album/sentimental-moods-single-feat-jazz-soul-single/1662065402"
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": "https://music.youtube.com/watch?v=7HRBDfXZNgg"
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": "https://youtu.be/7HRBDfXZNgg"
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": "https://www.shazam.com/ru/track/647768115/sentimental-moods-feat-jazz-soul"
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": "https://amazon.com/music/player/albums/B0BRCKMWNJ?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_Is7MlDNwykkcmzKRd9hTFmMsN"
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": ""
+      }
+    ],
     "new": true,
     "howl": null
   },
@@ -30,7 +103,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001170340_116170340"
       },
-
 
       {
         "name": "Звук",
@@ -199,7 +271,6 @@
         "url": "https://vk.com/audio-2001449623_115449623"
       },
 
-
       {
         "name": "Звук",
         "icon": "/img/store/zvuk.svg",
@@ -276,7 +347,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001459700_115459700"
       },
-
 
       {
         "name": "Звук",
