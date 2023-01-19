@@ -23,7 +23,7 @@
       {
         "name": "Звук",
         "icon": "/img/store/zvuk.svg",
-        "url": ""
+        "url": "https://zvuk.com/release/28159178"
       },
 
       {
@@ -77,7 +77,7 @@
       {
         "name": "Spotify",
         "icon": "/img/store/spotify.svg",
-        "url": ""
+        "url": "https://open.spotify.com/track/4hG6SlyQoZoQh8W2Rjvs4Y?si=193b141a178a46d1"
       }
     ],
     "new": true,
