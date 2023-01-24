@@ -11,8 +11,10 @@
 
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-3 text-sm text-gray-300">
+          
           <a class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" href="https://vk.com/thefubon" target="_blank"><Icon name="mdi:vk" size="24"/></a>
-          <a class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" href="https://www.instagram.com/thefubon/" target="_blank"><Icon name="ph:instagram-logo-bold" size="24"/></a>
+
+          <a class="text-black dark:text-gray-300 hover:text-black/75 block dark:hover:text-primary duration-150" href="https://t.me/fubon_ru" target="_blank"><Icon name="akar-icons:telegram-fill" size="24"/></a>
         </div>
 
         <AppColorMode/>
