@@ -269,11 +269,7 @@
               <p class="text-sm text-gray-600 dark:text-gray-300/75">PsySystem — это Российский лейбл звукозаписи, в основном выпускающий музыку в стиле пси-транс. Был основан в 2006 году, и является личным лейблом, где выпускаются только понравившиеся музыка, в основном это свои синглы и работы сторонних исполнителей, в большинстве своем в жанре «пси-транс».</p>
             </div>
 
-            <div class="flex items-center gap-4 text-xs text-gray-500 dark:text-gray-300/75">
-              <a class="block" href="https://www.liveinternet.ru/click" target="_blank"><img src="https://counter.yadro.ru/logo?26.1" title="LiveInternet: показано число посетителей за сегодня" alt="" style="border:0" width="88" height="15"/></a>
-
-              <span>Версия: 1.0.0 beta 4</span>
-            </div>
+            <span class="text-xs text-gray-500 dark:text-gray-300/75">Версия: 1.0.0 beta 4</span>
           </div>
 
         </div>
