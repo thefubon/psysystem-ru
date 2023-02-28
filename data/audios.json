@@ -1,12 +1,22 @@
 [
   
+  {
+    "file": "/music/thefubon-ambient.mp3",
+    "name": "Ambient",
+    "artist": "TheFubon",
+    "date": "28.02.2023",
+    "cover": "/img/cover/TheFubon-Ambient.png",
+    
+    "new": true,
+    "howl": null
+  },
   
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1672047348/music/sentimental-moods.mp3",
     "name": "Sentimental Moods",
     "artist": "TheFubon & Jazz Soul",
     "date": "26.12.2022",
-    "cover": "/cover/sentimental-moods.png",
+    "cover": "/img/cover/sentimental-moods.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -80,7 +90,6 @@
         "url": "https://open.spotify.com/track/4hG6SlyQoZoQh8W2Rjvs4Y?si=193b141a178a46d1"
       }
     ],
-    "new": true,
     "howl": null
   },
 
@@ -90,7 +99,7 @@
     "name": "Time For Freedom",
     "artist": "TheFubon",
     "date": "25.11.2022",
-    "cover": "/cover/time-for-freedom.png",
+    "cover": "/img/cover/time-for-freedom.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -173,7 +182,7 @@
     "name": "Flying Phoenix",
     "artist": "TheFubon",
     "date": "25.11.2022",
-    "cover": "/cover/flying-pohenix.png",
+    "cover": "/img/cover/flying-pohenix.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -257,7 +266,7 @@
     "name": "Fun At Noise",
     "artist": "TheFubon",
     "date": "11.11.2022",
-    "cover": "/cover/fun-at-noise.png",
+    "cover": "/img/cover/fun-at-noise.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -334,7 +343,7 @@
     "name": "Soul of Space",
     "artist": "TheFubon",
     "date": "11.11.2022",
-    "cover": "/cover/soul-of-space.png",
+    "cover": "/img/cover/soul-of-space.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -417,7 +426,7 @@
     "name": "Quantum",
     "artist": "TheFubon",
     "date": "24.09.2022",
-    "cover": "/cover/quantum.jpg",
+    "cover": "/img/cover/quantum.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -501,7 +510,7 @@
     "name": "Under The Stars",
     "artist": "TheFubon",
     "date": "24.09.2022",
-    "cover": "/cover/under-the-stars.jpg",
+    "cover": "/img/cover/under-the-stars.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -585,7 +594,7 @@
     "name": "Until",
     "artist": "TheFubon",
     "date": "16.09.2022",
-    "cover": "/cover/until.jpg",
+    "cover": "/img/cover/until.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -669,7 +678,7 @@
     "name": "Retrospective",
     "artist": "TheFubon",
     "date": "16.09.2022",
-    "cover": "/cover/retrospective.jpg",
+    "cover": "/img/cover/retrospective.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -753,7 +762,7 @@
     "name": "Deeper House",
     "artist": "TheFubon",
     "date": "16.09.2022",
-    "cover": "/cover/deeper-house.jpg",
+    "cover": "/img/cover/deeper-house.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -837,7 +846,7 @@
     "name": "Your Love",
     "artist": "TheFubon",
     "date": "11.07.2022",
-    "cover": "/cover/your-love.jpg",
+    "cover": "/img/cover/your-love.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -921,7 +930,7 @@
     "name": "Where Did You Go",
     "artist": "TheFubon",
     "date": "08.07.2022",
-    "cover": "/cover/where-did-you-go.jpg",
+    "cover": "/img/cover/where-did-you-go.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1005,7 +1014,7 @@
     "name": "Feelings of Youth",
     "artist": "TheFubon",
     "date": "13.02.2021",
-    "cover": "/cover/feelings-of-youth.jpg",
+    "cover": "/img/cover/feelings-of-youth.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1089,7 +1098,7 @@
     "name": "SunSet (Extended)",
     "artist": "TheFubon",
     "date": "09.02.2021",
-    "cover": "/cover/sunset-extended-version.jpg",
+    "cover": "/img/cover/sunset-extended-version.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1173,7 +1182,7 @@
     "name": "By My Side",
     "artist": "yagelProject",
     "date": "01.05.2020",
-    "cover": "/cover/by-my-side.png",
+    "cover": "/img/cover/by-my-side.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1257,7 +1266,7 @@
     "name": "Prey",
     "artist": "yagelProject",
     "date": "25.09.2019",
-    "cover": "/cover/prey.png",
+    "cover": "/img/cover/prey.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1335,7 +1344,7 @@
     "name": "SunSet",
     "artist": "yagelProject",
     "date": "23.08.2019",
-    "cover": "/cover/sunset.png",
+    "cover": "/img/cover/sunset.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1413,7 +1422,7 @@
     "name": "Atmosphere",
     "artist": "yagelProject",
     "date": "16.08.2019",
-    "cover": "/cover/atmosphere.png",
+    "cover": "/img/cover/atmosphere.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1491,7 +1500,7 @@
     "name": "Big Tree",
     "artist": "yagelProject",
     "date": "12.08.2019",
-    "cover": "/cover/big-tree.png",
+    "cover": "/img/cover/big-tree.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1569,7 +1578,7 @@
     "name": "Eximinds Trance",
     "artist": "yagelProject",
     "date": "08.08.2019",
-    "cover": "/cover/eximinds-trance.png",
+    "cover": "/img/cover/eximinds-trance.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1647,7 +1656,7 @@
     "name": "Мама, Я Танцую",
     "artist": "#2Маши & yagelProject",
     "date": "17.07.2019",
-    "cover": "/cover/mama-ya-tancuyu.jpg",
+    "cover": "/img/cover/mama-ya-tancuyu.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1725,7 +1734,7 @@
     "name": "Black Beach",
     "artist": "yagelProject",
     "date": "28.12.2019",
-    "cover": "/cover/black-beach.png",
+    "cover": "/img/cover/black-beach.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1809,7 +1818,7 @@
     "name": "Тихая правда",
     "artist": "Перекати поле",
     "date": "20.07.2015",
-    "cover": "/cover/tichaya-pravda.png",
+    "cover": "/img/cover/tichaya-pravda.png",
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -1893,7 +1902,7 @@
     "name": "Teacher's Preach",
     "artist": "yagelProject",
     "date": "11.06.2013",
-    "cover": "/cover/teachers-preach.png",
+    "cover": "/img/cover/teachers-preach.png",
     "sub": [
       {
         "name": "Яндекс Музыка",

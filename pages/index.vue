@@ -20,7 +20,7 @@
             <div class="hover:cursor-pointer relative group overflow-hidden rounded-lg dark:border dark:border-white/10" @click="selectSound(indexo)">
               <span class="opacity-0 group-hover:opacity-100 duration-150 absolute inset-0 bg-black/50"></span>
 
-              <NuxtImg class="w-full" provider="cloudinary" format="webp" sizes="sm:480px" quality="80" :src="audio.cover" :alt="audio.name" width="250" height="250" />
+              <NuxtImg class="w-full" format="webp" sizes="sm:480px" quality="80" :src="audio.cover" :alt="audio.name" width="250" height="250" />
 
               <!-- NEW STATUS -->
               <span class="absolute top-3 right-3 bg-yellow-400 px-1.5 text-black rounded-full text-xs" v-if="audio.new">New</span>
@@ -63,7 +63,7 @@
                     <div class="hover:cursor-pointer relative group overflow-hidden rounded-lg dark:border dark:border-white/10" @click="selectSound(indexo)">
                       <span class="opacity-0 group-hover:opacity-100 duration-150 absolute inset-0 bg-black/50"></span>
 
-                      <NuxtImg provider="cloudinary" format="webp" sizes="sm:640px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
+                      <NuxtImg format="webp" sizes="sm:640px" quality="80" :src="audio.cover" :alt="audio.name" width="480" height="480" />
 
                       <!-- NEW STATUS -->
                       <span class="absolute top-3 right-3 bg-yellow-400 px-1.5 text-black rounded-full text-xs" v-if="audio.new">New</span>
@@ -231,7 +231,7 @@
           <div>
             <div v-for="(audio,indexo) in audios.slice(index,index+1)" :key="indexo">
               <!-- COVER -->
-              <NuxtImg class="w-full rounded-lg dark:border dark:border-white/10" provider="cloudinary" format="webp" sizes="sm:520px" quality="80" :src="audio.cover" :alt="audio.name" width="380" height="380" />
+              <NuxtImg class="w-full rounded-lg dark:border dark:border-white/10" format="webp" sizes="sm:520px" quality="80" :src="audio.cover" :alt="audio.name" width="380" height="380" />
 
               <!-- TITLE -->
               <div class="mt-4">
@@ -287,7 +287,7 @@
         <div class="flex w-full md:w-auto items-center gap-4">
           <!-- COVER -->
           <div class="flex-1 flex items-center gap-2 md:gap-4" v-for="(audio,indexo) in audios.slice(index, index + 1)" :key="indexo">
-            <NuxtImg class="rounded-md" provider="cloudinary" format="webp" sizes="sm:48px" quality="80" :src="audio.cover" :alt="audio.name" width="40" height="40" />
+            <NuxtImg class="rounded-md" format="webp" sizes="sm:48px" quality="80" :src="audio.cover" :alt="audio.name" width="40" height="40" />
 
             <!-- ABOUT -->
             <div class="flex flex-col font-semibold">
@@ -350,10 +350,6 @@
 </template>
 
 <script>
-/*
-import Track21 from "/music/fun-at-noise.mp3";
-*/
-
 import { Howl, Howler } from 'howler';
 import audiosData from '/data/audios.json'
 
