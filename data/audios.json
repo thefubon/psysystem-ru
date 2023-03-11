@@ -70,180 +70,13 @@
       {
         "name": "NetEase Music",
         "icon": "/img/store/netease.svg",
-        "url": ""
-      },
-
-      {
-        "name": "Spotify",
-        "icon": "/img/store/spotify.svg",
-        "url": "https://open.spotify.com/track/6835okjsUIvM2o2kFAEkwT?si=5f38e075a7b84237"
-      }
-    ],
-    "howl": null
-  },
-
-
-  {
-    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669392375/music/time-for-freedom.mp3",
-    "name": "Time For Freedom",
-    "artist": "TheFubon",
-    "date": "25.11.2022",
-    "cover": "/img/cover/time-for-freedom.png",
-    "sub": [
-      {
-        "name": "Яндекс Музыка",
-        "icon": "/img/store/yandex-music.svg",
-        "url": "https://music.yandex.ru/album/24213456/track/109374028"
-      },
-
-      {
-        "name": "VK Музыка",
-        "icon": "/img/store/vk-music.svg",
-        "url": "https://vk.com/audio-2001170340_116170340"
-      },
-
-      {
-        "name": "Звук",
-        "icon": "/img/store/zvuk.svg",
-        "url": "https://zvuk.com/release/27749801"
-      },
-
-      {
-        "name": "Apple Music / iTunes",
-        "icon": "/img/store/apple-music.svg",
-        "url": "https://music.apple.com/ru/album/time-for-freedom-single/1657676365"
-      },
-
-      {
-        "name": "YouTube Music",
-        "icon": "/img/store/youtube-music.svg",
-        "url": "https://music.youtube.com/watch?v=4prQufD8l5I"
-      },
-
-      {
-        "name": "YouTube",
-        "icon": "/img/store/youtube.svg",
-        "url": "https://youtu.be/4prQufD8l5I"
-      },
-
-      {
-        "name": "Shazam",
-        "icon": "/img/store/Shazam.svg",
-        "url": "https://www.shazam.com/track/644405326/time-for-freedom"
-      },
-
-      {
-        "name": "Amazon Music",
-        "icon": "/img/store/amazon-music.svg",
-        "url": "https://amazon.com/music/player/albums/B0BNKRQ7QW?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_dChhjHWpmSHlN5vEj8rVfxQuK"
-      },
-
-      {
-        "name": "Deezer",
-        "icon": "/img/store/deezer.svg",
-        "url": "https://deezer.page.link/wE7ohT9Bj6yWih4U6"
-      },
-
-      {
-        "name": "YouSee Musik",
-        "icon": "/img/store/YouSee-Musik.svg",
-        "url": "https://musik.yousee.dk/sang/280240193"
-      },
-
-      {
-        "name": "NetEase Music",
-        "icon": "/img/store/netease.svg",
         "url": "https://music.163.com/#/song?id=2029227894"
       },
 
       {
         "name": "Spotify",
         "icon": "/img/store/spotify.svg",
-        "url": "https://open.spotify.com/album/0vfiQwz17dwVjS1Z3qL5cL"
-      }
-    ],
-    "howl": null
-  },
-
-
-  {
-    "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669737299/music/flying-phoenix.mp3",
-    "name": "Flying Phoenix",
-    "artist": "TheFubon",
-    "date": "25.11.2022",
-    "cover": "/img/cover/flying-pohenix.png",
-    "sub": [
-      {
-        "name": "Яндекс Музыка",
-        "icon": "/img/store/yandex-music.svg",
-        "url": "https://music.yandex.ru/album/24225375/track/109412649"
-      },
-
-      {
-        "name": "VK Музыка",
-        "icon": "/img/store/vk-music.svg",
-        "url": "https://vk.com/audio-2001060549_116060549"
-      },
-
-
-      {
-        "name": "Звук",
-        "icon": "/img/store/zvuk.svg",
-        "url": "https://zvuk.com/release/27766524"
-      },
-
-      {
-        "name": "Apple Music / iTunes",
-        "icon": "/img/store/apple-music.svg",
-        "url": "https://music.apple.com/ru/album/flying-phoenix-single/1657193404"
-      },
-
-      {
-        "name": "YouTube Music",
-        "icon": "/img/store/youtube-music.svg",
-        "url": "https://music.youtube.com/watch?v=AFimzeccRlM"
-      },
-
-      {
-        "name": "YouTube",
-        "icon": "/img/store/youtube.svg",
-        "url": "https://youtu.be/AFimzeccRlM"
-      },
-
-      {
-        "name": "Shazam",
-        "icon": "/img/store/Shazam.svg",
-        "url": "https://www.shazam.com/track/644046953/flying-phoenix"
-      },
-
-      {
-        "name": "Amazon Music",
-        "icon": "/img/store/amazon-music.svg",
-        "url": "https://amazon.com/music/player/albums/B0BNN7LGXD?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_DTbldfWFLioxNqdgu4y71A0St"
-      },
-
-      {
-        "name": "YouSee Musik",
-        "icon": "/img/store/YouSee-Musik.svg",
-        "url": "https://musik.yousee.dk/album/280326528"
-      },
-
-      {
-        "name": "Deezer",
-        "icon": "/img/store/deezer.svg",
-        "url": "https://deezer.page.link/VBCw3zFTX2bHSyDy8"
-      },
-
-      {
-        "name": "NetEase Music",
-        "icon": "/img/store/netease.svg",
-        "url": "https://music.163.com/#/song?id=2003441016"
-      },
-
-      {
-        "name": "Spotify",
-        "icon": "/img/store/spotify.svg",
-        "url": "https://open.spotify.com/album/2gse6W0XGcfoTKw1ImJISm"
+        "url": "https://open.spotify.com/track/6835okjsUIvM2o2kFAEkwT?si=5f38e075a7b84237"
       }
     ],
     
@@ -316,12 +149,6 @@
         "name": "YouSee Musik",
         "icon": "/img/store/YouSee-Musik.svg",
         "url": "https://musik.yousee.dk/album/282113263"
-      },
-
-      {
-        "name": "NetEase Music",
-        "icon": "/img/store/netease.svg",
-        "url": ""
       },
 
       {
