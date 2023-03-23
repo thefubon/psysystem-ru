@@ -1,5 +1,14 @@
 [
-  
+  {
+    "file": "/music/thefubon-psynation.mp3",
+    "name": "PsyNation",
+    "artist": "TheFubon",
+    "date": "23.03.2023",
+    "cover": "/img/cover/psynation.png",
+    "new": true,
+    "howl": null
+  },
+
   {
     "file": "/music/thefubon-ambient.mp3",
     "name": "Ambient",
@@ -79,8 +88,7 @@
         "url": "https://open.spotify.com/track/6835okjsUIvM2o2kFAEkwT?si=5f38e075a7b84237"
       }
     ],
-    
-    "new": true,
+
     "howl": null
   },
   
