@@ -5,13 +5,13 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      title: 'Fubon',
+      title: 'PsySystem Records',
       titleTemplate: '%s',
       meta: [
         { name: 'description', content: 'PsySystem — Российский лейбл звукозаписи' },
         { name: 'keywords', content: 'psysystem, music, fubon, thefubon, yagelproject, psytrace, trance, progressive, house, chillout, deep' },
         { name: 'author', content: 'Fubon' },
-        { name: 'copyright', content: 'Fubon' },
+        { name: 'copyright', content: 'PsySystem Records' },
         { name: 'viewport', content: 'width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0' },
         { name: 'application-name', content: 'PsySystem' },
         { name: 'msapplication-tooltip', content: 'PsySystem — Российский лейбл звукозаписи' },

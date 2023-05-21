@@ -3,7 +3,7 @@
     <div class="container flex h-16 md:h-20 items-center justify-between font-medium">
       <div>
         <a class="inline-block" href="/">
-          <h1 class="sr-only">Fubon</h1>
+          <h1 class="sr-only">PsySystem Records</h1>
           <img class="h-[28px] w-[113px] min-w-fit logo-dark" src="/img/logo-white.svg" alt="Fubon" width="113" height="28" aria-hidden="true" />
           <img class="h-[28px] w-[113px] min-w-fit logo-white" src="/img/logo-dark.svg" alt="Fubon" width="113" height="28" aria-hidden="true" />
         </a>
