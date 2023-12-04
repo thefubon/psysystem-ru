@@ -605,7 +605,7 @@
 
             <a
               class="inline-block text-xs text-gray-500 dark:text-gray-300/75"
-              href="/fubon.ru"
+              href="https://fubon.ru"
               target="_blank"
               >Сделано в Fubon</a
             >
