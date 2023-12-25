@@ -752,7 +752,7 @@
     setup(){
 
         useHead({
-          titleTemplate: '%s | PsySystem Records',
+          titleTemplate: '%s | Fubon',
         })
 
         const audios = ref(audiosData);
