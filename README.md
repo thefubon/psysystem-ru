@@ -1,42 +1,46 @@
-# Nuxt 3 Minimal Starter
+# 👨‍💻 Как правильно деплоить сайт?
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
+```ssh
+cd /var/www/www-root/data/www/psysystem.ru
 ```
 
-## Development Server
+### Установка GIT
 
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
+```ssh
+sudo apt update
+sudo apt install git
 ```
 
-## Production
+### Настройка git
 
-Build the application for production:
+https://www.youtube.com/watch?v=i-T5rJ1WkOI&t=2s
 
-```bash
-npm run build
+```
+git config --global user.name "thefubon"
+git config --global user.email "thefubon@gmail.com"
 ```
 
-Locally preview production build:
+### После клонируем проект с GitHub и стандартные команды
 
-```bash
-npm run preview
+https://github.com/settings/tokens
+
+```ssh
+git clone 'https://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@github.com/thefubon/psysystem-ru.git'
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+В туже папку
+
+```ssh
+git clone https://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@github.com/thefubon/psysystem-ru.git ./
+```
+
+Из GitHub На сервер
+
+```ssh
+git reset --hard
+git pull
+
+Скорее всего, правильным решением в данном случае будет:
+git fetch --all
+git reset --hard origin/main
+```
