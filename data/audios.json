@@ -1,11 +1,95 @@
 [
   {
+    "file": "/music/harda&pixel-dance-all-night.mp3",
+    "name": "Dance All Night",
+    "artist": "Hard & Pixel",
+    "date": "21.05.2024",
+    "cover": "/img/cover/dance-all-night.png",
+    "new": false,
+    "sub": [
+      {
+        "name": "Яндекс Музыка",
+        "icon": "/img/store/yandex-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "VK Музыка",
+        "icon": "/img/store/vk-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Звук",
+        "icon": "/img/store/zvuk.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Apple Music / iTunes",
+        "icon": "/img/store/apple-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube Music",
+        "icon": "/img/store/youtube-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouTube",
+        "icon": "/img/store/youtube.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Shazam",
+        "icon": "/img/store/Shazam.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Amazon Music",
+        "icon": "/img/store/amazon-music.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Deezer",
+        "icon": "/img/store/deezer.svg",
+        "url": ""
+      },
+
+      {
+        "name": "YouSee Musik",
+        "icon": "/img/store/YouSee-Musik.svg",
+        "url": ""
+      },
+
+      {
+        "name": "NetEase Music",
+        "icon": "/img/store/netease.svg",
+        "url": ""
+      },
+
+      {
+        "name": "Spotify",
+        "icon": "/img/store/spotify.svg",
+        "url": ""
+      }
+    ],
+
+    "howl": null
+  },
+
+  {
     "file": "/music/thefubon-ambient.mp3",
     "name": "Ambient",
     "artist": "TheFubon",
     "date": "28.02.2023",
     "cover": "/img/cover/TheFubon-Ambient.png",
-    "new": true,
+    "new": false,
     "sub": [
       {
         "name": "Яндекс Музыка",
@@ -82,7 +166,7 @@
 
     "howl": null
   },
-  
+
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1672047348/music/sentimental-moods.mp3",
     "name": "Sentimental Moods",
@@ -158,7 +242,6 @@
     ],
     "howl": null
   },
-
 
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669392375/music/time-for-freedom.mp3",
@@ -242,7 +325,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1669737299/music/flying-phoenix.mp3",
     "name": "Flying Phoenix",
@@ -261,7 +343,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001060549_116060549"
       },
-
 
       {
         "name": "Звук",
@@ -325,7 +406,6 @@
     ],
     "howl": null
   },
-
 
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454140/music/fun-at-noise.mp3",
@@ -402,7 +482,6 @@
     ],
     "howl": null
   },
-
 
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454139/music/soul-of-space.mp3",
@@ -486,7 +565,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454185/music/quantum.mp3",
     "name": "Quantum",
@@ -505,7 +583,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001267659_113267659"
       },
-
 
       {
         "name": "Звук",
@@ -570,7 +647,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454149/music/under-the-stars.mp3",
     "name": "Under The Stars",
@@ -589,7 +665,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001267860_113267860"
       },
-
 
       {
         "name": "Звук",
@@ -654,7 +729,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454144/music/until.mp3",
     "name": "Until",
@@ -673,7 +747,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001976540_112976540"
       },
-
 
       {
         "name": "Звук",
@@ -738,7 +811,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454168/music/retrospective.mp3",
     "name": "Retrospective",
@@ -757,7 +829,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001991369_112991369"
       },
-
 
       {
         "name": "Звук",
@@ -822,7 +893,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454171/music/deeper-house.mp3",
     "name": "Deeper House",
@@ -841,7 +911,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001757464_110757464"
       },
-
 
       {
         "name": "Звук",
@@ -906,7 +975,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454154/music/your-love.mp3",
     "name": "Your Love",
@@ -925,7 +993,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001580340_110580340"
       },
-
 
       {
         "name": "Звук",
@@ -990,7 +1057,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454184/music/where-did-you-go.mp3",
     "name": "Where Did You Go",
@@ -1009,7 +1075,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001431796_110431796"
       },
-
 
       {
         "name": "Звук",
@@ -1074,7 +1139,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454199/music/feelings-of-youth.mp3",
     "name": "Feelings of Youth",
@@ -1093,7 +1157,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001909913_83909913"
       },
-
 
       {
         "name": "Звук",
@@ -1158,7 +1221,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454189/music/sunset-extented-version.mp3",
     "name": "SunSet (Extended)",
@@ -1177,7 +1239,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": "https://vk.com/audio-2001715280_83715280"
       },
-
 
       {
         "name": "Звук",
@@ -1242,7 +1303,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454166/music/by-my-side.mp3",
     "name": "By My Side",
@@ -1261,7 +1321,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -1326,7 +1385,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454176/music/prey.mp3",
     "name": "Prey",
@@ -1345,7 +1403,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -1404,7 +1461,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454196/music/sunset.mp3",
     "name": "SunSet",
@@ -1423,7 +1479,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -1482,7 +1537,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454148/music/atmosphere.mp3",
     "name": "Atmosphere",
@@ -1501,7 +1555,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -1560,7 +1613,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454122/music/big-tree.mp3",
     "name": "Big Tree",
@@ -1579,7 +1631,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -1638,7 +1689,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454172/music/eximinds-trance.mp3",
     "name": "Eximinds Trance",
@@ -1657,7 +1707,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -1716,7 +1765,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454165/music/mama-ya-tancuyu.mp3",
     "name": "Мама, Я Танцую",
@@ -1735,7 +1783,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -1794,7 +1841,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454145/music/black-beach.mp3",
     "name": "Black Beach",
@@ -1813,7 +1859,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -1878,7 +1923,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454147/music/tichaya-pravda.mp3",
     "name": "Тихая правда",
@@ -1897,7 +1941,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -1962,7 +2005,6 @@
     "howl": null
   },
 
-
   {
     "file": "https://res.cloudinary.com/drjdwwxf7/video/upload/v1668454205/music/teachers-preach.mp3",
     "name": "Teacher's Preach",
@@ -1981,7 +2023,6 @@
         "icon": "/img/store/vk-music.svg",
         "url": ""
       },
-
 
       {
         "name": "Звук",
@@ -2045,6 +2086,4 @@
     ],
     "howl": null
   }
-
-  
 ]
