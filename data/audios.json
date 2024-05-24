@@ -10,13 +10,19 @@
       {
         "name": "Яндекс Музыка",
         "icon": "/img/store/yandex-music.svg",
-        "url": ""
+        "url": "https://music.yandex.ru/album/31372379"
       },
 
       {
         "name": "VK Музыка",
         "icon": "/img/store/vk-music.svg",
-        "url": ""
+        "url": "https://vk.com/audio-2001994335_127994335"
+      },
+
+      {
+        "name": "МТС Музыка",
+        "icon": "/img/store/mts-music.svg",
+        "url": "https://music.mts.ru/album/31372379"
       },
 
       {
@@ -28,19 +34,19 @@
       {
         "name": "Apple Music / iTunes",
         "icon": "/img/store/apple-music.svg",
-        "url": ""
+        "url": "https://music.apple.com/ru/album/dance-all-night/1747895863?i=1747895865"
       },
 
       {
         "name": "YouTube Music",
         "icon": "/img/store/youtube-music.svg",
-        "url": ""
+        "url": "https://music.youtube.com/watch?v=i6A_9LZqyV4&si=kjXOvQjmeUKxPvj9"
       },
 
       {
         "name": "YouTube",
         "icon": "/img/store/youtube.svg",
-        "url": ""
+        "url": "https://www.youtube.com/watch?v=i6A_9LZqyV4"
       },
 
       {
@@ -52,7 +58,7 @@
       {
         "name": "Amazon Music",
         "icon": "/img/store/amazon-music.svg",
-        "url": ""
+        "url": "https://amazon.com/music/player/tracks/B0D4Z9F47L?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_CgicC0BaAVIxbF1ENUsmHj4SK"
       },
 
       {
